@@ -21,6 +21,7 @@
 
 html {
     scrollbar-color: var(--color-text) var(--color-bg);
+    font-size: 100%;
 }
 
 body {
@@ -40,7 +41,7 @@ header {
     flex-shrink: 0;
 
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
 .header-block-1 {
@@ -54,7 +55,6 @@ header {
 .header-block-2 {
     color: var(--color-text);
     margin-right: 6vw;
-
     display: flex;
 }
 
@@ -83,7 +83,6 @@ main {
     margin-top: var(--main-margin-top);
     display: grid;
     grid-template-columns: 10vw 1fr;
-    grid-template-rows: 1fr;
     min-height: calc(100vh - var(--footer-height) - var(--header-height) - var(--main-margin-top) - var(--footer-border));
 }
 
@@ -96,6 +95,8 @@ footer {
     border-top: var(--footer-border) solid var(--color-secondary);
     flex-shrink: 0;
     gap: 8px;
+
+    font-size: 1.4rem;
 }
 
 .footer-link {
@@ -122,12 +123,12 @@ footer {
 
     h1 {
         font-weight: 400;
-        font-size: 44px;
+        font-size: 2.7rem;
     }
 
     h2 {
         font-weight: 300;
-        font-size: 30px;
+        font-size: 1.93rem;
     }
 }
 
@@ -143,6 +144,7 @@ footer {
     border-radius: 9px;
     border: solid var(--color-accent);
     transition: 0.3s;
+    font-size: 1.4rem;
 
     will-change: transform, shadowbox;
 
@@ -170,6 +172,7 @@ footer {
 
     p {
         text-align: center;
+        font-size: 1.4rem;
     }
 }
 
@@ -186,6 +189,6 @@ img {
 
     p {
         text-align: center;
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 }
