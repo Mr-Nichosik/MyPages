@@ -1,0 +1,94 @@
+@media (max-width: 992px) {
+    main {
+        grid-template-columns: 0fr 3fr 0fr;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 110px;
+        --footer-height: 40px;
+    }
+
+    .header-block-1 h1 {
+        font-size: 2.1rem;
+    }
+
+    .header-link {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --header-height: 95px;
+        --footer-height: 35px;
+    }
+
+    .header-block-1 h1 {
+        font-size: 1.7rem;
+    }
+
+    .header-link {
+        font-size: 0.8rem;
+    }
+
+    .main-section h2 {
+        font-size: 1.1rem;
+    }
+
+    .terminal-title-block {
+        font-size: 0.9rem;
+    }
+
+    .terminal-window-icons {
+        gap: 30px;
+    }
+
+    .terminal-content-block {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --header-height: 70px;
+        --footer-height: 25px;
+    }
+
+    .header-block-1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-link {
+        font-size: 0.7rem;
+    }
+
+    .main-section h2 {
+        font-size: 1rem;
+    }
+
+    .terminal-title-block {
+        font-size: 0.8rem;
+    }
+
+    .terminal-window-icons {
+        gap: 20px;
+    }
+
+    .terminal-content-block {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+}

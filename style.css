@@ -62,6 +62,7 @@ header {
     color: var(--color-side);
     border-radius: 4px 4px 4px 4px;
     transition: 0.3s;
+    font-size: 1rem;
 
     &:hover {
         color: black;
@@ -83,6 +84,8 @@ footer {
     border-top: var(--border) solid var(--color-border);
 
     letter-spacing: 1px;
+
+    font-size: 1rem;
 }
 
 main {
@@ -150,6 +153,7 @@ main {
     padding-right: 25px;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
 
     * {
         margin-top: 6px;
@@ -182,6 +186,7 @@ main {
 .terminal-content-block {
     padding: 12px;
     overflow-y: auto;
+    font-size: 1rem;
 }
 
 .terminal-string {
@@ -207,7 +212,6 @@ main {
     }
 
 }
-
 
 .terminal-section-link {
     color: var(--color-text);
