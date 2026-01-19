@@ -64,7 +64,8 @@ a {
     color: inherit;
 }
 
-.header-link, .footer-link {
+.header-link,
+.footer-link {
     transition: 0.3s;
     will-change: transform, shadowbox;
 
@@ -89,14 +90,19 @@ main {
 footer {
     color: var(--color-text);
     height: var(--footer-height);
+    border-top: var(--footer-border) solid var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: var(--footer-border) solid var(--color-secondary);
-    flex-shrink: 0;
     gap: 8px;
 
     font-size: 1.4rem;
+}
+
+.footer-text {
+    margin: 0px;
+    display: flex;
+    gap: 8px;
 }
 
 .footer-link {
@@ -176,11 +182,20 @@ footer {
     }
 }
 
+.left-photo-1-section {
+    order: 1;
+}
+
+.right-photo-1-section {
+    order: 2;
+}
+
 img {
     max-width: 100%;
     border-radius: 30px;
     border: solid var(--color-bg);
 }
+
 
 .descripton {
     h2 {
