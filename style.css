@@ -110,6 +110,7 @@ main {
     font-size: 1.4rem;
     color: var(--color-side);
     letter-spacing: 2px;
+
 }
 
 .terminal-container {
@@ -192,6 +193,9 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
 
     * {
         margin: 0;
