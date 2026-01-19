@@ -3,6 +3,10 @@
     color: white;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     margin: 0;
     font-family: Consolas, "courier new";

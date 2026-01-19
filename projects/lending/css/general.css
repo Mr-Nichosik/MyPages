@@ -3,8 +3,8 @@
     color: white;
 }
 
-html {
-    scrollbar-color: var(--color-text) var(--color-bg);
+* {
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -17,6 +17,10 @@ html {
     --footer-height: 110px;
     --main-margin-top: 100px;
     --footer-border: 1px;
+}
+
+html {
+    scrollbar-color: var(--color-text) var(--color-bg);
 }
 
 body {
