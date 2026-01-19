@@ -1,3 +1,8 @@
+::selection {
+    background-color: var(--color-accent);
+    color: white;
+}
+
 html {
     scrollbar-color: var(--color-text) var(--color-bg);
 }
@@ -87,6 +92,10 @@ footer {
     border-top: var(--footer-border) solid var(--color-secondary);
     flex-shrink: 0;
     gap: 8px;
+}
+
+.footer-link {
+    user-select: all;
 }
 
 .right-separator {
