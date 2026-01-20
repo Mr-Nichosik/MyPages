@@ -1,6 +1,7 @@
 @media (max-width: 992px) {
     :root {
-        --main-margin-top: 10px;
+        --main-margin-top: 110px;
+        --footer-height: 90px;
     }
 
     main {
@@ -13,7 +14,7 @@
 
     .content {
         h1 {
-            font-size: 2.4rem;
+            font-size: 2.3rem;
         }
 
         h2 {
@@ -26,7 +27,6 @@
         grid-template-rows: 1fr;
 
         p {
-            text-align: center;
             font-size: 1.4rem;
         }
     }
@@ -42,27 +42,31 @@
     footer {
         font-size: 1.3rem;
         flex-direction: column;
-        gap: 0px;
     }
 }
 
 @media (max-width: 768px) {
     :root {
-        --main-margin-top: 0px;
-        --footer-height: 80px;
+        --main-margin-top: 100px;
+        --footer-height: 70px;
     }
 
-    .main-content-block {
-        gap: 2.4vh
+    header {
+        font-size: 1.2rem;
+    }
+
+    .header-block-1 {
+        margin-left: 9vw;
     }
 
     .button {
-        font-size: 1.2rem;
+        font-size: 1.08rem;
+        padding: 11px;
     }
 
     .content {
         h1 {
-            font-size: 2rem;
+            font-size: 1.9rem;
         }
 
         h2 {
@@ -71,29 +75,186 @@
     }
 
     .photo-1-section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
         p {
-            text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
 
-    .left-photo-1-section {
-        order: 2;
-    }
-
-    .right-photo-1-section {
-        order: 1;
-    }
-
     footer {
-        gap: 0px;
         font-size: 1.05rem;
+        gap: 2px;
+    }
+
+    .descripton {
+        p {
+            font-size: 1.2rem;
+        }
     }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    :root {
+        --main-margin-top: 90px;
+        --footer-height: 55px;
+    }
 
-@media (max-width: 480px) {}
+    header {
+        font-size: 1.05rem;
+    }
+
+    .header-block-1 {
+        gap: 2vw;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 9px;
+    }
+
+    .content {
+        h1 {
+            font-size: 1.45rem;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+        }
+    }
+
+    .photo-1-section {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .descripton {
+        p {
+            font-size: 1.05rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --main-margin-top: 60px;
+        --header-height: 60px;
+    }
+
+    header {
+        font-size: 0.9rem;
+    }
+
+    .header-block-1 {
+        gap: 1.9vw;
+    }
+
+    .buttons-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 8px;
+        display: inline;
+    }
+
+    .content {
+        h1 {
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 0.94rem;
+        }
+    }
+
+    .photo-1-section {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .descripton {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        font-size: 0.8rem;
+    }
+
+    .content {
+        h1 {
+            font-size: 1rem;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+        }
+    }
+
+    .photo-1-section {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+
+    .descripton {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        font-size: 0.7rem;
+    }
+
+    .content {
+        h1 {
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+        }
+    }
+
+    .button {
+        font-size: 0.75rem;
+        padding: 5.5px;
+    }
+
+    .photo-1-section {
+        p {
+            font-size: 0.65rem;
+        }
+    }
+
+    .descripton {
+        p {
+            font-size: 0.73rem;
+        }
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
