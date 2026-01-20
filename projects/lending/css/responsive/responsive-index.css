@@ -1,17 +1,4 @@
 @media (max-width: 992px) {
-    :root {
-        --main-margin-top: 110px;
-        --footer-height: 90px;
-    }
-
-    main {
-        grid-template-columns: 0fr 1fr;
-    }
-
-    .main-content-block {
-        gap: 2.4vh
-    }
-
     .content {
         h1 {
             font-size: 2.3rem;
@@ -38,27 +25,9 @@
     .right-photo-1-section {
         order: 1;
     }
-
-    footer {
-        font-size: 1.3rem;
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 768px) {
-    :root {
-        --main-margin-top: 100px;
-        --footer-height: 70px;
-    }
-
-    header {
-        font-size: 1.2rem;
-    }
-
-    .header-block-1 {
-        margin-left: 9vw;
-    }
-
     .button {
         font-size: 1.08rem;
         padding: 11px;
@@ -80,11 +49,6 @@
         }
     }
 
-    footer {
-        font-size: 1.05rem;
-        gap: 2px;
-    }
-
     .descripton {
         p {
             font-size: 1.2rem;
@@ -93,19 +57,6 @@
 }
 
 @media (max-width: 576px) {
-    :root {
-        --main-margin-top: 90px;
-        --footer-height: 55px;
-    }
-
-    header {
-        font-size: 1.05rem;
-    }
-
-    .header-block-1 {
-        gap: 2vw;
-    }
-
     .button {
         font-size: 0.9rem;
         padding: 9px;
@@ -127,10 +78,6 @@
         }
     }
 
-    footer {
-        font-size: 0.9rem;
-    }
-
     .descripton {
         p {
             font-size: 1.05rem;
@@ -139,19 +86,6 @@
 }
 
 @media (max-width: 480px) {
-    :root {
-        --main-margin-top: 60px;
-        --header-height: 60px;
-    }
-
-    header {
-        font-size: 0.9rem;
-    }
-
-    .header-block-1 {
-        gap: 1.9vw;
-    }
-
     .buttons-block {
         flex-direction: column;
         text-align: center;
@@ -179,10 +113,6 @@
         }
     }
 
-    footer {
-        font-size: 0.8rem;
-    }
-
     .descripton {
         p {
             font-size: 0.9rem;
@@ -191,10 +121,6 @@
 }
 
 @media (max-width: 375px) {
-    header {
-        font-size: 0.8rem;
-    }
-
     .content {
         h1 {
             font-size: 1rem;
@@ -211,10 +137,6 @@
         }
     }
 
-    footer {
-        font-size: 0.75rem;
-    }
-
     .descripton {
         p {
             font-size: 0.75rem;
@@ -223,10 +145,6 @@
 }
 
 @media (max-width: 320px) {
-    header {
-        font-size: 0.7rem;
-    }
-
     .content {
         h1 {
             font-size: 0.9rem;
@@ -252,9 +170,5 @@
         p {
             font-size: 0.73rem;
         }
-    }
-
-    footer {
-        font-size: 0.7rem;
     }
 }

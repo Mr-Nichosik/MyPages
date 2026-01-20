@@ -1,0 +1,68 @@
+@media (max-width: 992px) {
+    .download-block {
+        flex-direction: column;
+        align-items: stretch;
+
+        .button {
+            order: 2;
+        }
+
+        p {
+            order: 1;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .version-description {
+        font-size: 1.4rem;
+    }
+
+    .button {
+        font-size: 1.08rem;
+        padding: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .version-description {
+        font-size: 1.3rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .version-description {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 9px;
+    }
+}
+
+@media (max-width: 375px) {
+    .version-description {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .version-description {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        font-size: 0.75rem;
+        padding: 5.5px;
+    }
+}
