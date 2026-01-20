@@ -72,7 +72,8 @@ a {
     color: inherit;
 }
 
-.header-link, .footer-link {
+.header-link,
+.footer-link {
     transition: 0.3s;
     will-change: transform, shadowbox;
 
@@ -128,6 +129,18 @@ main {
     font-size: 1.4rem;
 
     will-change: transform, box-shadow;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 
     &:hover {
         box-shadow: 0 0 30px rgba(16, 137, 62, 0.793);
