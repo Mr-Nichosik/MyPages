@@ -12,6 +12,7 @@ function BurgerLogic()
     const DisplayOverlay = document.getElementById("display-overlay");
     const RightSideBar = document.getElementById("burger-menu-right-sidebar")
     const Main = document.getElementById("main");
+    const Body = document.body;
 
     RightSideBar.addEventListener("click", CloseMenu);
 
@@ -20,6 +21,7 @@ function BurgerLogic()
 
     function ShowMenu() 
     {
+        Body.classList.add("fixed");
         Main.classList.add("inactive");
         BurgerMenuBlock.classList.add("active");
         DisplayOverlay.classList.add("active");
@@ -27,6 +29,7 @@ function BurgerLogic()
 
     function CloseMenu()
     {
+        Body.classList.remove("fixed");
         Main.classList.remove("inactive");
         BurgerMenuBlock.classList.remove("active");
         DisplayOverlay.classList.remove("active");
