@@ -11,18 +11,22 @@
 
 <body>
     <header>
-        <div class="header-block-1">
+        <nav class="header-block-1">
             <a href=".\index.html" class="header-link">Главная</a>
             <a href=".\downloads.html" class="header-link">Загрузки</a>
             <a href="..\..\index.html" class="header-link">Список проектов</a>
-        </div>
+        </nav>
 
-        <div class="header-block-2">
+        <nav class="header-block-2">
             <a href="https://github.com/Mr-Nichosik/MyPages" class="header-link">GitHub</a>
-        </div>
+        </nav>
+
+        <nav class="burger-header-block">
+            <a id="burger-menu-button" class="header-link">☰</a>
+        </nav>
     </header>
 
-    <main>
+    <main id="main">
         <div class="right-separator"></div>
 
         <section class="main-content-block">
@@ -40,6 +44,26 @@
         <a href="https://www.pexels.com/ru-ru/photo/4164418/"
             class="footer-link">https://www.pexels.com/ru-ru/photo/4164418/</a>
     </footer>
+
+    <nav id="burger-menu-block">
+        <div class="burger-menu-left-sidebar">
+            <div class="burger-block-1">
+                <a href=".\index.html" class="burger-link">Главная</a>
+                <a href=".\downloads.html" class="burger-link">Загрузки</a>
+                <a href="..\..\index.html" class="burger-link">Список проектов</a>
+            </div>
+
+            <div class="burger-block-2">
+                <a href="https://github.com/Mr-Nichosik/MyPages" class="burger-link">GitHub</a>
+            </div>
+        </div>
+
+        <div id="burger-menu-right-sidebar"></div>
+    </nav>
+
+    <div id="display-overlay"></div>
+
+    <script src=".\js\main.js"></script>
 </body>
 
 </html>
