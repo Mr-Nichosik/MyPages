@@ -13,7 +13,7 @@
 
 .photo-1-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: clamp(200px, 48vw, 700px) 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     gap: 14px;

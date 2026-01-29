@@ -101,7 +101,7 @@ main {
     background-color: var(--color-bg);
     margin-top: var(--main-margin-top);
     display: grid;
-    grid-template-columns: 10vw 1fr;
+    grid-template-columns: clamp(8vw, 10vw, 500px) 1fr;
     min-height: calc(100vh - var(--footer-height) - var(--main-margin-top) - var(--footer-border));
     transition: 0.3s;
     will-change: transform;
@@ -123,7 +123,7 @@ main.inactive {
     color: var(--color-text);
     display: flex;
     flex-direction: column;
-    gap: 14vh;
+    gap: clamp(25px, 14vh, 100px);
     margin-left: 6vw;
     margin-right: 10vw;
 }
