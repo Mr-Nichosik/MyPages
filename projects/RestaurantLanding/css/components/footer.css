@@ -1,0 +1,11 @@
+
+footer {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    background: var(--color-additional)
+}
+
+footer div {
+    padding: 25px;
+}

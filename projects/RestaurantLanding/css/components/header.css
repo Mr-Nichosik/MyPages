@@ -1,0 +1,52 @@
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+}
+
+header nav {
+    padding: 15px;
+}
+
+.js-enabled {
+    .header-link {
+        display: none;
+    }
+
+    #burger-button {
+        display: flex;
+    }
+}
+
+#burger-button {
+    width: 35px;
+    height: 35px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    background-color: var(--color-accent-transparent);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    outline: 2px solid var(--color-secondary);
+    box-shadow: 0 0 5px var(--color-additional);
+    color: var(--color-bg);
+    cursor: pointer;
+
+    transition: 0.25s;
+    user-select: none;
+
+    will-change: background-color, box-shadow;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--color-accent-dark);
+    }
+
+    &:focus {
+        background-color: var(--color-accent-dark);
+    }
+}

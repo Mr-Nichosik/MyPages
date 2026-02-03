@@ -33,6 +33,7 @@ body {
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 body.fixed {
@@ -102,10 +103,11 @@ main {
     margin-top: var(--main-margin-top);
     display: grid;
     grid-template-columns: clamp(8vw, 10vw, 500px) 1fr;
-    min-height: calc(100vh - var(--footer-height) - var(--main-margin-top) - var(--footer-border));
+    /* min-height: calc(100vh - var(--footer-height) - var(--main-margin-top) - var(--footer-border)); */
     transition: 0.3s;
     will-change: transform;
     transform-origin: right;
+    flex: 1 0 auto;
 }
 
 main.inactive {

@@ -1,0 +1,45 @@
+.button, button {
+    text-decoration: none;
+    color: var(--color-bg);
+    background-color: var(--color-accent);
+
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 1px;
+    transition: 0.25s;
+
+    user-select: none;
+    cursor: pointer;
+    border: none;
+
+    font-size: 0.8rem;
+
+    will-change: background-color, box-shadow;
+
+    &:hover {
+        box-shadow: 0 0 20px var(--color-accent-dark);
+    }
+
+    &:active {
+        background-color: var(--color-accent-dark);
+    }
+}
+
+.menu-link {
+    color: var(--color-bg);
+    transition: 0.25s;
+    text-decoration: none;
+    user-select: none;
+
+    will-change: text-shadow;
+
+    &:hover {
+        text-shadow: 20px 5px 1px var(--color-accent-dark);
+    }
+
+    &:active {
+        text-shadow: 20px 5px 1px var(--color-secondary);
+    }
+}
