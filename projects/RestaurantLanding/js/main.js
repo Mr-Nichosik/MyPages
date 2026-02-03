@@ -14,7 +14,7 @@ function BurgerMenu()
     BurgerButton.addEventListener("click", () =>
     {
         Menu.classList.add("active")
-        document.body.classList.add("fixed");
+        document.documentElement.classList.add("fixed");
     });
 
     const BurgerLinks = document.getElementsByClassName("burger-link");
@@ -23,7 +23,7 @@ function BurgerMenu()
         item.addEventListener("click", () =>
         {
             Menu.classList.remove("active")
-            document.body.classList.remove("fixed");
+            document.documentElement.classList.remove("fixed");
         });
     }
 }
@@ -40,7 +40,7 @@ function BookModal()
         {
             Modal.classList.add("active");
             Overlay.classList.add("active");
-            document.body.classList.add("fixed");
+            document.documentElement.classList.add("fixed");
         });
     }
 
@@ -49,7 +49,7 @@ function BookModal()
     {
         Modal.classList.remove("active");
         Overlay.classList.remove("active");
-        document.body.classList.remove("fixed");
+        document.documentElement.classList.remove("fixed");
     });
 }
 

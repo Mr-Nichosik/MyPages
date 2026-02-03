@@ -1,4 +1,9 @@
-.button, button {
+button {
+    all: unset;
+}
+
+.button,
+button {
     text-decoration: none;
     color: var(--color-bg);
     background-color: var(--color-accent);
@@ -12,9 +17,8 @@
 
     user-select: none;
     cursor: pointer;
-    border: none;
 
-    font-size: 0.8rem;
+    font-size: 0.94rem;
 
     will-change: background-color, box-shadow;
 
@@ -32,6 +36,7 @@
     transition: 0.25s;
     text-decoration: none;
     user-select: none;
+    cursor: pointer;
 
     will-change: text-shadow;
 

@@ -7,22 +7,22 @@
     <title>Ресторан Rest</title>
     <link rel="stylesheet" href=".\css\main.css">
     <link rel="stylesheet" href=".\css\specific\index.css">
-    <link rel="stylesheet" href=".\css\responsive\responsive-general.css">
+    <link rel="stylesheet" href=".\css\responsive\responsive-main.css">
     <link rel="stylesheet" href=".\css\responsive\responsive-index.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../../index.html" class="button header-link">Все проекты</a>
+            <a href="../../index.html" class="menu-link header-link">Все проекты</a>
 
-            <a href="#content-about" class="button header-link">О нас</a>
+            <a href="#content-about" class="menu-link header-link">О нас</a>
 
-            <a href="#content-menu" class="button header-link">Меню</a>
+            <a href="#content-menu" class="menu-link header-link">Меню</a>
 
-            <a href="#content-delivery" class="button header-link">Доставка</a>
+            <a href="#content-delivery" class="menu-link header-link">Доставка</a>
 
-            <a href="#content-contacts" class="button header-link">Контакты</a>
+            <a href="#content-contacts" class="menu-link header-link">Контакты</a>
 
             <a class="button header-link book-button">Бронь столика</a>
 
@@ -53,7 +53,7 @@
                 <p class="content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae possimus
                     nulla quaerat ipsa, quia velit eius pariatur mollitia officiis nobis officia laboriosam voluptatum
                     dolorum sed molestiae magni ea nam facilis!</p>
-                <a class="button">Меню</a>
+                <a class="button">Посмотреть меню</a>
             </div>
         </section>
 
@@ -68,41 +68,50 @@
                     commodo dapibus facilisis sit amet, finibus eget augue. Mauris auctor, dui a ornare eleifend, nibh
                     mauris rutrum elit, eget iaculis lorem dui ac quam. Suspendisse a lectus eget leo elementum
                     vehicula. Donec sodales molestie ligula id aliquam.</p>
-                <a class="button">Заказать доставку</a>
             </div>
         </section>
 
         <section class="content-section" id="content-contacts">
+            <p class="content-subtitle">контакты</p>
+            <h3 class="content-title">Контакты</h3>
+
             <div class="info-block-main">
-                <div class="info-block">
-                    <p class="info-address">Красноярск, ул. Ленина, д. 1</p>
-                    <p class="info-phone">+7 (999) 999-99-99</p>
-                </div>
-
-                <div class="info-block">
-                    <p class="info-subtitle">Время работы</p>
-
-                    <div class="info-work-schedule">
-                        <p class="info-text-weekdays">Вс-Чт:</p>
-                        <p class="info-text">с 12:00 до 23:00</p>
+                <div class="info-block-container">
+                    <div class="info-block">
+                        <p class="info-address">Красноярск, ул. Ленина, д. 1</p>
+                        <p class="info-phone">+7 (999) 999-99-99</p>
                     </div>
 
-                    <div class="info-work-schedule">
-                        <p class="info-text-weekdays">Пт-Сб:</p>
-                        <p class="info-text">с 12:00 до 3:00</p>
-                    </div>
-                </div>
+                    <div class="info-block">
+                        <p class="info-subtitle">Время работы</p>
 
-                <div class="info-block-button">
-                    <a class="button book-button">Забронировать столик</a>
+                        <div class="info-work-schedule">
+                            <p class="info-text-weekdays">Вс-Чт:</p>
+                            <p class="info-text">с 12:00 до 23:00</p>
+                        </div>
+
+                        <div class="info-work-schedule">
+                            <p class="info-text-weekdays">Пт-Сб:</p>
+                            <p class="info-text">с 12:00 до 3:00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block-button">
+                        <a class="button book-button">Забронировать столик</a>
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
 
     <footer>
         <div>
             <a href="#content-first-screen" class="button">Наверх</a>
+        </div>
+        <div class="footer-description">
+            <p>Фото:</p>
+            <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/" class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
         </div>
     </footer>
 
@@ -124,7 +133,7 @@
 
             <a href="#content-contacts" class="burger-link menu-link">Контакты</a>
 
-            <a class="button burger-link book-button">Бронь столика</a>
+            <a class="button burger-link book-button" id="burger-book-button">Бронь столика</a>
         </nav>
 
         <a class="burger-link menu-link" id="burger-close-button">🗙</a>
@@ -146,7 +155,8 @@
 
                 <label>
                     Телефон
-                    <input id="input-phone" type="tel" name="phone" pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$">
+                    <input id="input-phone" type="tel" name="phone"
+                        pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$">
                 </label>
 
                 <label>
@@ -164,7 +174,7 @@
                     <input id="input-guests-number" type="number" name="number" min="0" max="15">
                 </label>
 
-                <button>Забронировать</button>
+                <a class="button" id="book-submit-button">Забронировать</a>
             </div>
         </section>
     </div>

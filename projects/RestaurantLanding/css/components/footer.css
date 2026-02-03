@@ -1,11 +1,21 @@
 
 footer {
-    margin-top: 6vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: var(--color-additional)
+    align-items: center;
+    gap: 2vh;
+
+    margin-top: 6vh;
+    padding: 25px;
+
+    background: var(--color-additional);
 }
 
-footer div {
-    padding: 25px;
+.footer-description {
+    color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
 }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Rest</title>
+    <link rel="stylesheet" href=".\css\main.css">
+    <link rel="stylesheet" href=".\css\responsive\responsive-main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="menu-link header-link">Все проекты</a>
+
+            <a href="#content-about" class="menu-link header-link">О нас</a>
+
+            <a href="#content-menu" class="menu-link header-link">Меню</a>
+
+            <a href="#content-delivery" class="menu-link header-link">Доставка</a>
+
+            <a href="#content-contacts" class="menu-link header-link">Контакты</a>
+
+            <a class="button header-link book-button">Бронь столика</a>
+
+            <a id="burger-button"><span>☰</span></a>
+        </nav>
+
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <div>
+            <a href="#content-first-screen" class="button">Наверх</a>
+        </div>
+        <div class="footer-description">
+            <p>Фото:</p>
+            <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/" class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
+        </div>
+    </footer>
+
+    <div id="overlay"></div>
+
+    <div id="burger-menu">
+        <div class="burger-menu-header">
+            <h3>Rest</h3>
+        </div>
+
+        <nav class="burger-menu-content">
+            <a href="../../index.html" class="burger-link menu-link">Все проекты</a>
+
+            <a href="#content-about" class="burger-link menu-link">О нас</a>
+
+            <a href="#content-menu" class="burger-link menu-link">Меню</a>
+
+            <a href="#content-delivery" class="burger-link menu-link">Доставка</a>
+
+            <a href="#content-contacts" class="burger-link menu-link">Контакты</a>
+
+            <a class="button burger-link book-button" id="burger-book-button">Бронь столика</a>
+        </nav>
+
+        <a class="burger-link menu-link" id="burger-close-button">🗙</a>
+    </div>
+
+    <div id="book-modal">
+        <section class="book-modal-section">
+            <div class="book-modal-header">
+                <a id="book-modal-close-button" class="menu-link">🗙</a>
+            </div>
+
+            <h3>Rest</h3>
+
+            <div class="book-modal-inputs">
+                <label>
+                    Имя
+                    <input id="input-name" type="text" name="name" minlength="3" maxlength="20">
+                </label>
+
+                <label>
+                    Телефон
+                    <input id="input-phone" type="tel" name="phone"
+                        pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$">
+                </label>
+
+                <label>
+                    Дата
+                    <input id="input-date" type="date" name="date">
+                </label>
+
+                <label>
+                    Время
+                    <input id="input-time" type="time" name="time">
+                </label>
+
+                <label>
+                    Количество гостей
+                    <input id="input-guests-number" type="number" name="number" min="0" max="15">
+                </label>
+
+                <a class="button">Забронировать</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

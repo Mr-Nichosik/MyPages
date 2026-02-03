@@ -28,7 +28,7 @@
 .burger-menu-header {
     color: var(--color-accent);
     margin-top: 5vh;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .burger-menu-content {
@@ -43,7 +43,7 @@
 
 #burger-close-button {
     margin-bottom: 5vh;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     &:hover {
         text-shadow: 10px 5px 1px var(--color-accent-dark);

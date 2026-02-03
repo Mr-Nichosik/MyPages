@@ -1,0 +1,81 @@
+#book-modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+    will-change: visibility, opacity, transform;
+    transform: scale(0);
+}
+
+#book-modal.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.book-modal-section {
+    color: var(--color-bg);
+    background-color: var(--color-additional);
+
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    gap: 2vh;
+}
+
+.book-modal-header {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-accent);
+}
+
+.book-modal-header a {
+    color: var(--color-accent);
+}
+
+.book-modal-section h3 {
+    color: var(--color-accent);
+}
+
+.book-modal-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.book-modal-inputs label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 0px;
+    outline: 1px solid var(--color-bg);
+    border: none;
+    background-color: var(--color-additional);
+    color: var(--color-bg);
+    padding: 7px;
+    font-size: 0.9rem;
+
+    transition: 0.3s;
+}
