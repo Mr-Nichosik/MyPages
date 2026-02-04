@@ -1,0 +1,51 @@
+:root {
+    --color-bg: #0a0f1a;
+    --color-text: #66FCF1;
+    --color-secondary: #45A29E;
+    --color-side: #C5C6C7;
+    --color-additional: #1F2833;
+    --color-border: rgb(65, 141, 137);
+    --color-terminal: rgb(1, 143, 1);
+
+    --header-height: 140px;
+    --footer-height: 50px;
+
+    --fs-base: 0.7rem;
+    --fs-large: 2rem;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: local('Consolas'), url('./fonts/Consolas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Consolas';
+    font-size: clamp(var(--fs-base), calc(var(--fs-base) + 0.9vw), var(--fs-large));
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: var(--color-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}

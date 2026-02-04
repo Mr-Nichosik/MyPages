@@ -1,0 +1,116 @@
+.terminal-container {
+    background-color: black;
+    outline: 1px solid var(--color-border);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 0 20px 20px 20px;
+
+    scrollbar-color: var(--color-text) var(--color-bg);
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.terminal-content-block {
+    padding: 12px;
+    font-size: 0.8rem;
+
+    overflow-y: auto;
+}
+
+.terminal-content-block p {
+    line-height: 1.5;
+}
+
+.terminal-string {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--color-terminal);
+}
+
+.terminal-section {
+    color: var(--color-terminal);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.terminal-section-link {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+        text-shadow: 0 0 8px var(--color-text);
+    }
+
+    &:hover::before,
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &::before {
+        content: '[';
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+
+    &::after {
+        content: ']';
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+}
+
+.terminal-title-block {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    background-color: #1a132c;
+    color: var(--color-side);
+
+    padding-left: 14px;
+    padding-right: clamp(15px, 25px, 30px);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+
+    * {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+}
+
+.terminal-window-icons {
+    display: flex;
+    gap: clamp(18px, 3vw, 90px);
+    line-height: 1.5;
+}
+
+.terminal-window-icon {
+    margin: 0;
+    cursor: default;
+    padding: 0 5px;
+    transition: 0.2s;
+}
+
+.terminal-window-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.terminal-window-icon-close:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 2px;
+}

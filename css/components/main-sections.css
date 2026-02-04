@@ -1,0 +1,33 @@
+main {
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+    max-height: calc(100vh - var(--footer-height) - var(--header-height));
+
+    background-color: transparent;
+    color: var(--color-text);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    flex: 1 0 auto;
+
+    outline: 1px solid var(--color-border);
+}
+
+.main-section {
+    outline: 1px solid var(--color-border);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-shrink: 1;
+}
+
+.main-section h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--color-side);
+    letter-spacing: 2px;
+
+    margin: 1vh 0px;
+}
