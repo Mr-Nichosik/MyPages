@@ -1,0 +1,44 @@
+:root {
+    --color-bg: rgb(8, 9, 11);
+    --color-bg-transparent: rgba(8, 9, 11, 0.793);
+    --color-bg-transparent-1: rgba(8, 9, 11, 0.3);
+    --color-accent: rgb(16, 137, 62);
+    --color-secondary: rgb(55, 55, 55);
+    --color-text: white;
+    --color-text-secondary: rgb(163, 163, 163);
+
+    /* --header-height: 100px; */
+    --footer-height: 110px;
+    /* --main-margin-top: 200px; */
+    --footer-border: 1px;
+
+    --fs-min: 0.7rem;
+    --fs-max: 2rem;
+}
+
+::selection {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scrollbar-color: var(--color-text) var(--color-bg);
+    font-size: clamp(var(--fs-min), calc(var(--fs-min) + 0.7vw), var(--fs-max));
+}
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.fixed {
+    overflow: hidden;
+}

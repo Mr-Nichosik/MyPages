@@ -1,21 +1,7 @@
 @media (max-width: 992px) {
-    .content {
-        h1 {
-            font-size: 2.3rem;
-        }
-
-        h2 {
-            font-size: 1.7rem;
-        }
-    }
-
     .photo-1-section {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-
-        p {
-            font-size: 1.4rem;
-        }
     }
 
     .left-photo-1-section {
@@ -27,64 +13,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .button {
-        font-size: 1.08rem;
-        padding: 11px;
-    }
-
-    .content {
-        h1 {
-            font-size: 1.9rem;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-        }
-    }
-
-    .photo-1-section {
-        p {
-            font-size: 1.1rem;
-        }
-    }
-
-    .descripton {
-        p {
-            font-size: 1.2rem;
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .button {
-        font-size: 0.9rem;
-        padding: 9px;
-    }
-
-    .content {
-        h1 {
-            font-size: 1.45rem;
-        }
-
-        h2 {
-            font-size: 1.15rem;
-        }
-    }
-
-    .photo-1-section {
-        p {
-            font-size: 0.9rem;
-        }
-    }
-
-    .descripton {
-        p {
-            font-size: 1.05rem;
-        }
-    }
-}
-
 @media (max-width: 480px) {
     .buttons-block {
         flex-direction: column;
@@ -92,83 +20,7 @@
     }
 
     .button {
-        font-size: 0.8rem;
         padding: 8px;
         display: inline;
-    }
-
-    .content {
-        h1 {
-            font-size: 1.1rem;
-        }
-
-        h2 {
-            font-size: 0.94rem;
-        }
-    }
-
-    .photo-1-section {
-        p {
-            font-size: 0.8rem;
-        }
-    }
-
-    .descripton {
-        p {
-            font-size: 0.9rem;
-        }
-    }
-}
-
-@media (max-width: 375px) {
-    .content {
-        h1 {
-            font-size: 1rem;
-        }
-
-        h2 {
-            font-size: 0.9rem;
-        }
-    }
-
-    .photo-1-section {
-        p {
-            font-size: 0.75rem;
-        }
-    }
-
-    .descripton {
-        p {
-            font-size: 0.75rem;
-        }
-    }
-}
-
-@media (max-width: 320px) {
-    .content {
-        h1 {
-            font-size: 0.9rem;
-        }
-
-        h2 {
-            font-size: 0.85rem;
-        }
-    }
-
-    .button {
-        font-size: 0.75rem;
-        padding: 5.5px;
-    }
-
-    .photo-1-section {
-        p {
-            font-size: 0.65rem;
-        }
-    }
-
-    .descripton {
-        p {
-            font-size: 0.73rem;
-        }
     }
 }
