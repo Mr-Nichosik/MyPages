@@ -34,7 +34,7 @@ header {
 footer {
     color: var(--color-text);
     height: clamp(2vh, 13vh, 15vh);
-    border-top: var(--footer-border) solid var(--color-secondary);
+    border-top: 1px solid var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;

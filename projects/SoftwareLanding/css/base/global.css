@@ -7,11 +7,6 @@
     --color-text: white;
     --color-text-secondary: rgb(163, 163, 163);
 
-    /* --header-height: 100px; */
-    --footer-height: 110px;
-    /* --main-margin-top: 200px; */
-    --footer-border: 1px;
-
     --fs-min: 0.7rem;
     --fs-max: 2rem;
 }
