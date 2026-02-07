@@ -96,3 +96,9 @@
 #book-modal-form input.invalid {
     outline: 1px solid var(--color-invalid);
 }
+
+#book-modal-form input[type="date"]::-webkit-datetime-edit,
+#book-modal-form input[type="time"]::-webkit-datetime-edit {
+    font-family: "Circe", sans-serif;
+    color: var(--color-bg);
+}
