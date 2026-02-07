@@ -87,6 +87,7 @@
     color: var(--color-bg);
     padding: 7px;
     font-size: 0.9rem;
+    width: 100%;
 
     transition: 0.3s;
 
