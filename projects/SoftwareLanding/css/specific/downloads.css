@@ -1,3 +1,7 @@
+figure {
+    all: unset;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -13,8 +17,4 @@
     background-color: rgba(75, 115, 90, 0.134);
     backdrop-filter: blur(15px);
     border-radius: 14px;
-}
-
-.version-description {
-    font-size: 1.5rem;
 }

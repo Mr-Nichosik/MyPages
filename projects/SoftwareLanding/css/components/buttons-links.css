@@ -1,4 +1,8 @@
-a {
+button {
+    all: unset;
+}
+
+a, button {
     text-decoration: none;
     user-select: none;
     color: inherit;

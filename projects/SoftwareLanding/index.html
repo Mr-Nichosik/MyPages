@@ -4,38 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Простой текстовый редактор MinaFlow с нативным интерфейсом Windows.">
+
+    <title>MinaFlow</title>
+
     <link rel="stylesheet" href=".\css\main.css">
     <link rel="stylesheet" href=".\css\specific\index.css">
     <link rel="stylesheet" href=".\css\responsive\responsive-main.css">
     <link rel="stylesheet" href=".\css\responsive\responsive-index.css">
-    <title>MinaFlow</title>
 </head>
 
 <body>
     <header>
-        <nav class="header-block-1">
-            <a href=".\index.html" class="header-link">Главная</a>
-            <a href=".\downloads.html" class="header-link">Загрузки</a>
-            <a href="..\..\index.html" class="header-link">Список проектов</a>
-        </nav>
+        <nav>
+            <div class="header-block-1">
+                <a href=".\index.html" class="header-link">Главная</a>
+                <a href=".\downloads.html" class="header-link">Загрузки</a>
+                <a href="..\..\index.html" class="header-link">Список проектов</a>
+            </div>
 
-        <nav class="header-block-2">
-            <a href="https://github.com/Mr-Nichosik/MyPages" class="header-link">GitHub</a>
-        </nav>
+            <div class="header-block-2">
+                <a href="https://github.com/Mr-Nichosik/MyPages" class="header-link">GitHub</a>
+            </div>
 
-        <nav class="burger-header-block">
-            <a id="burger-menu-button" class="header-link">☰</a>
+            <div class="burger-header-block">
+                <button id="burger-menu-button" class="header-link">☰</button>
+            </div>
         </nav>
     </header>
 
     <main id="main">
         <div class="right-separator"></div>
 
-        <section class="main-content-block">
+        <article class="main-content-block">
             <div class="content">
                 <h1>Создавайте файлы с неформатированным текстом или формата Markdown в нативном интерфейсе Windows</h1>
                 <div class="buttons-block">
-                    <a class="button accent-button">
+                    <a href="#" class="button accent-button">
                         Скачать последнюю версию
                     </a>
                     <a href=".\downloads.html" class="button non-accent-button">
@@ -45,26 +50,26 @@
             </div>
 
             <div class="content">
-                <section class="photo-1-section">
+                <figure class="photo-1-section">
                     <div class="left-photo-1-section">
                         <img src=".\assets\img\Photo1.jpg" alt="Stock photo placeholder">
-                        <p>Не является фотографией продукта. Позже здесь будут фото программы.</p>
+                        <figcaption>Не является фотографией продукта. Позже здесь будут фото программы.</figcaption>
                     </div>
 
-                    <div class="right-photo-1-section">
+                    <figcaption class="right-photo-1-section">
                         <h2>MinaFlow — простой текстовый редактор для повседневных задач. Лёгкий, быстрый, удобный</h2>
-                    </div>
-                </section>
+                    </figcaption>
+                </figure>
             </div>
 
             <div class="content">
-                <div class="descripton">
+                <div class="description">
                     <h2>Работает на Windows 7 и новее</h2>
                     <p>Разрабатывается на языке C# с использованием Windows Forms для создания привычного, удобного и
                         понятного пользовательского интерфейса</p>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
 
     <footer>
@@ -76,7 +81,7 @@
             class="footer-link">https://www.pexels.com/ru-ru/photo/4164418/</a>
     </footer>
 
-    <nav id="burger-menu-block">
+    <div id="burger-menu-block">
         <div class="burger-menu-left-sidebar">
             <div class="burger-block-1">
                 <a href=".\index.html" class="burger-link">Главная</a>
@@ -90,7 +95,7 @@
         </div>
 
         <div id="burger-menu-right-sidebar"></div>
-    </nav>
+    </div>
 
     <div id="display-overlay"></div>
 

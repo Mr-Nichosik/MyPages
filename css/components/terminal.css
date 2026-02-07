@@ -40,6 +40,10 @@
     align-items: stretch;
 }
 
+.terminal-section-title {
+    font-size: 0.8rem;
+}
+
 .terminal-section-link {
     color: var(--color-text);
     text-decoration: none;

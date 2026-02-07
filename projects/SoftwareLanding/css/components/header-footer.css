@@ -1,5 +1,5 @@
 
-header {
+header nav {
     background-color: var(--color-bg-transparent);
     backdrop-filter: blur(15px);
     height: clamp(3vh, 15vh, 20vh);
