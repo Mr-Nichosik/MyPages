@@ -1,6 +1,7 @@
-button {
+
+[name="submit"] {
     all: unset;
-}
+}   
 
 .button,
 button {

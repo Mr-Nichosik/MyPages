@@ -31,7 +31,10 @@ function BurgerMenu()
 function BookModal()
 {
     const Modal = document.getElementById("book-modal");
+    const Section = document.getElementById("book-modal-section")
     const Overlay = document.getElementById("overlay");
+    Modal.addEventListener("click", Close);
+    Section.addEventListener("click", function (e) { e.stopPropagation() });
 
     const BookButtons = document.getElementsByClassName("book-button");
     for (item of BookButtons)
@@ -45,12 +48,13 @@ function BookModal()
     }
 
     const CloseButton = document.getElementById("book-modal-close-button");
-    CloseButton.addEventListener("click", () =>
+    CloseButton.addEventListener("click", Close);
+    function Close()
     {
         Modal.classList.remove("active");
         Overlay.classList.remove("active");
         document.documentElement.classList.remove("fixed");
-    });
+    }
 }
 
 main();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -33,13 +33,57 @@
         
     </main>
 
+    <div id="book-modal">
+        <section id="book-modal-section" class="book-modal-section">
+            <div class="book-modal-header">
+                <a id="book-modal-close-button" class="menu-link">✕</a>
+            </div>
+
+            <h3>Rest</h3>
+
+            <form id="book-modal-form" novalidate>
+                <label>
+                    Имя
+                    <input id="input-name" type="text" name="name" minlength="2" maxlength="20"
+                        placeholder="Только русский алфавит" pattern="[а-яА-ЯёЁ\s]{2,20}" required>
+                </label>
+
+                <label>
+                    Телефон
+                    <input id="input-phone" type="tel" name="phone" minlength="12" maxlength="12"
+                        placeholder="+70000000000"
+                        pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" required>
+                </label>
+
+                <label>
+                    Дата
+                    <input id="input-date" type="date" name="date" maxlength="10" required>
+                </label>
+
+                <label>
+                    Время
+                    <input id="input-time" type="time" name="time" required>
+                </label>
+
+                <label>
+                    Количество гостей
+                    <input id="input-guests-number" type="text" name="number" min="1" max="15" required
+                        placeholder="Не более 15">
+                </label>
+
+                <button id="book-submit-button" class="button" name="submit" readonly>Отправить</button>
+            </form>
+        </section>
+    </div>
+
     <footer>
         <div>
             <a href="#content-first-screen" class="button">Наверх</a>
         </div>
         <div class="footer-description">
             <p>Фото:</p>
-            <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/" class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
+            <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/"
+                class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
         </div>
     </footer>
 
@@ -64,47 +108,7 @@
             <a class="button burger-link book-button" id="burger-book-button">Бронь столика</a>
         </nav>
 
-        <a class="burger-link menu-link" id="burger-close-button">🗙</a>
-    </div>
-
-    <div id="book-modal">
-        <section class="book-modal-section">
-            <div class="book-modal-header">
-                <a id="book-modal-close-button" class="menu-link">🗙</a>
-            </div>
-
-            <h3>Rest</h3>
-
-            <div class="book-modal-inputs">
-                <label>
-                    Имя
-                    <input id="input-name" type="text" name="name" minlength="3" maxlength="20">
-                </label>
-
-                <label>
-                    Телефон
-                    <input id="input-phone" type="tel" name="phone"
-                        pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$">
-                </label>
-
-                <label>
-                    Дата
-                    <input id="input-date" type="date" name="date">
-                </label>
-
-                <label>
-                    Время
-                    <input id="input-time" type="time" name="time">
-                </label>
-
-                <label>
-                    Количество гостей
-                    <input id="input-guests-number" type="number" name="number" min="0" max="15">
-                </label>
-
-                <a class="button">Забронировать</a>
-            </div>
-        </section>
+        <a class="burger-link menu-link" id="burger-close-button">✕</a>
     </div>
 
     <script src="./js/main.js"></script>
