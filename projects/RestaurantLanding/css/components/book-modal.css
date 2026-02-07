@@ -95,8 +95,12 @@
     color: var(--color-bg);
     padding: 7px;
     font-size: 0.9rem;
+    box-sizing: border-box;
 
     transition: 0.3s;
+
+    width: 100%;
+    flex-grow: 1;
 
     text-align: center;
 }
