@@ -9,7 +9,7 @@ header {
     box-shadow: 0px -10px 5px 2px black;
 }
 
-header nav {
+header nav, .header-button-block {
     padding: 15px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ header nav {
 }
 
 .js-enabled {
-    .header-link {
+    .header-link, .header-button-block {
         display: none;
     }
 
@@ -28,8 +28,8 @@ header nav {
 }
 
 #burger-button {
-    width: 35px;
-    height: 35px;
+    width: 15px;
+    height: 25px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ header nav {
 
     background-color: var(--color-accent-transparent);
     backdrop-filter: blur(4px);
-    border-radius: 50%;
+    border-radius: 100%;
     outline: 2px solid var(--color-secondary);
     box-shadow: 0 0 5px var(--color-additional);
     color: var(--color-bg);

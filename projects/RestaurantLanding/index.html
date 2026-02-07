@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Элитный ресторан Rest на Взлётке в Красноярске. Премиумальная кухня, авторские блюда, доставка и бронь.">
+
     <title>Ресторан Rest</title>
+
     <link rel="stylesheet" href=".\css\main.css">
     <link rel="stylesheet" href=".\css\specific\index.css">
     <link rel="stylesheet" href=".\css\responsive\responsive-main.css">
@@ -24,23 +27,25 @@
 
             <a href="#content-contacts" class="menu-link header-link">Контакты</a>
 
-            <a class="button header-link book-button">Бронь столика</a>
-
-            <a id="burger-button"><span>☰</span></a>
+            <button id="burger-button"><span>☰</span></button>
         </nav>
+
+        <div class="header-button-block">
+            <button class="button book-button">Бронь столика</button>
+        </div>
 
     </header>
 
     <main>
         <section id="content-first-screen" class="content-section">
             <div>
-                <h2 class="main-title">Элитный ресторан Rest на Взлётке</h2>
+                <h1 class="main-title">Элитный ресторан Rest на Взлётке</h1>
             </div>
         </section>
 
         <section class="content-section" id="content-about">
             <p class="content-subtitle">о ресторане</p>
-            <h3 class="content-title">Rest</h3>
+            <h2 class="content-title">Rest</h2>
             <p class="content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae possimus nulla
                 quaerat ipsa, quia velit eius pariatur mollitia officiis nobis officia laboriosam voluptatum dolorum sed
                 molestiae magni ea nam facilis!</p>
@@ -48,18 +53,18 @@
 
         <section class="content-section" id="content-menu">
             <p class="content-subtitle">меню</p>
-            <h3 class="content-title">Меню</h3>
+            <h2 class="content-title">Меню</h2>
             <div class="content-subsection">
                 <p class="content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae possimus
                     nulla quaerat ipsa, quia velit eius pariatur mollitia officiis nobis officia laboriosam voluptatum
                     dolorum sed molestiae magni ea nam facilis!</p>
-                <a class="button">Посмотреть меню</a>
+                <button class="button">Посмотреть меню</button>
             </div>
         </section>
 
         <section class="content-section" id="content-delivery">
             <p class="content-subtitle">доставка</p>
-            <h3 class="content-title">Доставка</h3>
+            <h2 class="content-title">Доставка</h2>
             <div class="content-subsection">
                 <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula
                     laoreet tellus, et venenatis lorem lobortis et. In dictum nulla ac lorem iaculis tempus. In tempus
@@ -73,7 +78,7 @@
 
         <section class="content-section" id="content-contacts">
             <p class="content-subtitle">контакты</p>
-            <h3 class="content-title">Контакты</h3>
+            <h2 class="content-title">Контакты</h2>
 
             <div class="info-block-main">
                 <div class="info-block-container">
@@ -97,7 +102,7 @@
                     </div>
 
                     <div class="info-block-button">
-                        <a class="button book-button">Забронировать столик</a>
+                        <button class="button book-button">Забронировать столик</button>
                     </div>
                 </div>
             </div>
@@ -114,34 +119,44 @@
             <h3>Rest</h3>
 
             <form id="book-modal-form" novalidate>
-                <label>
-                    Имя
-                    <input id="input-name" type="text" name="name" minlength="2" maxlength="20"
-                        placeholder="Только русский алфавит" pattern="[а-яА-ЯёЁ\s]{2,20}" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Имя
+                        <input id="input-name" type="text" name="name" minlength="2" maxlength="20" aria-required="true"
+                            placeholder="Только русский алфавит" pattern="[а-яА-ЯёЁ\s]{2,20}" required>
+                    </label>
+                </div>
 
-                <label>
-                    Телефон
-                    <input id="input-phone" type="tel" name="phone" minlength="12" maxlength="12"
-                        placeholder="+70000000000"
-                        pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Телефон
+                        <input id="input-phone" inputmode="tel" type="tel" name="phone" minlength="12" maxlength="12" aria-required="true"
+                            placeholder="+70000000000"
+                            pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" required>
+                    </label>
+                </div>
 
-                <label>
-                    Дата
-                    <input id="input-date" type="date" name="date" maxlength="10" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Дата
+                        <input id="input-date" type="date" name="date" maxlength="10" required aria-required="true">
+                    </label>
+                </div>
 
-                <label>
-                    Время
-                    <input id="input-time" type="time" name="time" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Время
+                        <input id="input-time" type="time" name="time" required aria-required="true">
+                    </label>
+                </div>
 
-                <label>
-                    Количество гостей
-                    <input id="input-guests-number" type="text" name="number" min="1" max="15" required
-                        placeholder="Не более 15">
-                </label>
+                <div class="form-group">
+                    <label>
+                        Количество гостей
+                        <input id="input-guests-number" inputmode="tel" type="text" name="number" min="1" max="15" required aria-required="true"
+                            placeholder="Не более 15">
+                    </label>
+                </div>
 
                 <button id="book-submit-button" class="button" name="submit" readonly>Отправить</button>
             </form>
@@ -149,14 +164,16 @@
     </div>
 
     <footer>
-        <div>
+        <div class="footer-content">
             <a href="#content-first-screen" class="button">Наверх</a>
+
+            <div class="footer-attribution">
+                <p>Фото:</p>
+                <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/"
+                    class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
+            </div>
         </div>
-        <div class="footer-description">
-            <p>Фото:</p>
-            <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/"
-                class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
-        </div>
+
     </footer>
 
     <div id="overlay"></div>
@@ -177,7 +194,7 @@
 
             <a href="#content-contacts" class="burger-link menu-link">Контакты</a>
 
-            <a class="button burger-link book-button" id="burger-book-button">Бронь столика</a>
+            <button class="button burger-link book-button" id="burger-book-button">Бронь столика</button>
         </nav>
 
         <a class="burger-link menu-link" id="burger-close-button">✕</a>

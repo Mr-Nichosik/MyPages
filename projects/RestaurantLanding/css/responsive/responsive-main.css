@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
     .js-enabled {
-        .header-link {
+        .header-link, .header-button-block {
             display: inline;
         }
 

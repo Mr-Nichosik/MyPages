@@ -1,5 +1,5 @@
 
-footer {
+.footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@ footer {
     background: var(--color-additional);
 }
 
-.footer-description {
+.footer-attribution {
     color: var(--color-bg);
     display: flex;
     justify-content: center;

@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Элитный ресторан Rest на Взлётке в Красноярске. Премиумальная кухня, авторские блюда, доставка и бронь.">
+
     <title>Ресторан Rest</title>
+
     <link rel="stylesheet" href=".\css\main.css">
+    <link rel="stylesheet" href=".\css\specific\index.css">
     <link rel="stylesheet" href=".\css\responsive\responsive-main.css">
+    <link rel="stylesheet" href=".\css\responsive\responsive-index.css">
 </head>
 
 <body>
@@ -22,10 +27,12 @@
 
             <a href="#content-contacts" class="menu-link header-link">Контакты</a>
 
-            <a class="button header-link book-button">Бронь столика</a>
-
-            <a id="burger-button"><span>☰</span></a>
+            <button id="burger-button"><span>☰</span></button>
         </nav>
+
+        <div class="header-button-block">
+            <button class="button book-button">Бронь столика</button>
+        </div>
 
     </header>
 
@@ -42,34 +49,44 @@
             <h3>Rest</h3>
 
             <form id="book-modal-form" novalidate>
-                <label>
-                    Имя
-                    <input id="input-name" type="text" name="name" minlength="2" maxlength="20"
-                        placeholder="Только русский алфавит" pattern="[а-яА-ЯёЁ\s]{2,20}" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Имя
+                        <input id="input-name" type="text" name="name" minlength="2" maxlength="20" aria-required="true"
+                            placeholder="Только русский алфавит" pattern="[а-яА-ЯёЁ\s]{2,20}" required>
+                    </label>
+                </div>
 
-                <label>
-                    Телефон
-                    <input id="input-phone" type="tel" name="phone" minlength="12" maxlength="12"
-                        placeholder="+70000000000"
-                        pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Телефон
+                        <input id="input-phone" inputmode="tel" type="tel" name="phone" minlength="12" maxlength="12" aria-required="true"
+                            placeholder="+70000000000"
+                            pattern="^(\+7|8)[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" required>
+                    </label>
+                </div>
 
-                <label>
-                    Дата
-                    <input id="input-date" type="date" name="date" maxlength="10" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Дата
+                        <input id="input-date" type="date" name="date" maxlength="10" required aria-required="true">
+                    </label>
+                </div>
 
-                <label>
-                    Время
-                    <input id="input-time" type="time" name="time" required>
-                </label>
+                <div class="form-group">
+                    <label>
+                        Время
+                        <input id="input-time" type="time" name="time" required aria-required="true">
+                    </label>
+                </div>
 
-                <label>
-                    Количество гостей
-                    <input id="input-guests-number" type="text" name="number" min="1" max="15" required
-                        placeholder="Не более 15">
-                </label>
+                <div class="form-group">
+                    <label>
+                        Количество гостей
+                        <input id="input-guests-number" inputmode="tel" type="text" name="number" min="1" max="15" required aria-required="true"
+                            placeholder="Не более 15">
+                    </label>
+                </div>
 
                 <button id="book-submit-button" class="button" name="submit" readonly>Отправить</button>
             </form>
@@ -77,14 +94,16 @@
     </div>
 
     <footer>
-        <div>
+        <div class="footer-content">
             <a href="#content-first-screen" class="button">Наверх</a>
+
+            <div class="footer-attribution">
+                <p>Фото:</p>
+                <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/"
+                    class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
+            </div>
         </div>
-        <div class="footer-description">
-            <p>Фото:</p>
-            <a href="https://www.pexels.com/photo/view-of-empty-restaurant-239975/"
-                class="menu-link">https://www.pexels.com/photo/view-of-empty-restaurant-239975/</a>
-        </div>
+
     </footer>
 
     <div id="overlay"></div>
@@ -105,13 +124,14 @@
 
             <a href="#content-contacts" class="burger-link menu-link">Контакты</a>
 
-            <a class="button burger-link book-button" id="burger-book-button">Бронь столика</a>
+            <button class="button burger-link book-button" id="burger-book-button">Бронь столика</button>
         </nav>
 
         <a class="burger-link menu-link" id="burger-close-button">✕</a>
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>
