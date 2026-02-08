@@ -1,0 +1,5 @@
+@import url("../components/food-card.css");
+
+#content-contacts {
+    padding-top: clamp(80px, 10vh, 100px);
+}

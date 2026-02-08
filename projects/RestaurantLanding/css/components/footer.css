@@ -1,10 +1,9 @@
-
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vh;
+    gap: clamp(10px, 2vh, 30px);
 
     margin-top: 6vh;
     padding: 25px;
@@ -12,10 +11,28 @@
     background: var(--color-additional);
 }
 
+.footer-content h3 {
+    color: var(--color-bg);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
 .footer-attribution {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(5px, 2vw, 20px);
+    line-height: 1;
+
+    font-size: 0.8rem;
+
+    align-items: center;
+}
+
+.footer-links-block {
     color: var(--color-bg);
     display: flex;
     justify-content: center;
-    gap: 1vw;
+
     flex-wrap: wrap;
+    gap: 1vw;
 }

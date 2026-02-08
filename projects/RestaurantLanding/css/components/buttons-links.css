@@ -1,7 +1,7 @@
-
-[name="submit"], button {
+[name="submit"],
+button {
     all: unset;
-}   
+}
 
 .button,
 button {
@@ -48,4 +48,8 @@ button {
     &:active {
         text-shadow: 20px 5px 1px var(--color-secondary);
     }
+}
+
+.footer-link {
+    user-select: unset;
 }
