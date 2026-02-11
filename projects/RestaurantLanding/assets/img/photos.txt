@@ -1,8 +1,0 @@
-food-1: Фотограф: Aditya Mara: https://www.pexels.com/ru-ru/photo/17223835/
-food-2: Фотограф: Pixabay: https://www.pexels.com/ru-ru/photo/262897/
-food-3: Фотограф: Pixabay: https://www.pexels.com/ru-ru/photo/262897/
-food-4: Фотограф: Jer Chung: https://www.pexels.com/ru-ru/photo/2116094/
-food-5: Фотограф: Alisha Mishra: https://www.pexels.com/ru-ru/photo/1346295/
-food-6: Фотограф: Cats Coming: https://www.pexels.com/ru-ru/photo/2942319/
-food-7: Фотограф: RDNE Stock project: https://www.pexels.com/ru-ru/photo/5737462/
-food-8: Фотограф: Pixabay: https://www.pexels.com/ru-ru/photo/357756/

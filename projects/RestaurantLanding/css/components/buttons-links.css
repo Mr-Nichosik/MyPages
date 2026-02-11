@@ -3,8 +3,7 @@ button {
     all: unset;
 }
 
-.button,
-button {
+.button {
     text-decoration: none;
     color: var(--color-bg);
     background-color: var(--color-accent);
@@ -27,7 +26,7 @@ button {
         box-shadow: 0 0 20px var(--color-accent-dark);
     }
 
-    &:active {
+    &:active, &:focus {
         background-color: var(--color-accent-dark);
     }
 }
@@ -45,7 +44,7 @@ button {
         text-shadow: 20px 5px 1px var(--color-accent-dark);
     }
 
-    &:active {
+    &:active, &:focus {
         text-shadow: 20px 5px 1px var(--color-secondary);
     }
 }

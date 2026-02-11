@@ -30,13 +30,13 @@ function BurgerMenu()
 
 function BookModal()
 {
+    const BookButtons = document.getElementsByClassName("book-button");
     const Modal = document.getElementById("book-modal");
     const Section = document.getElementById("book-modal-section")
     const Overlay = document.getElementById("overlay");
-    Modal.addEventListener("click", Close);
-    Section.addEventListener("click", function (e) { e.stopPropagation() });
+    const CloseButton = document.getElementById("book-modal-close-button");
+    const FoodCardModal = document.getElementById("food-modal");
 
-    const BookButtons = document.getElementsByClassName("book-button");
     for (item of BookButtons)
     {
         item.addEventListener("click", () =>
@@ -44,10 +44,14 @@ function BookModal()
             Modal.classList.add("active");
             Overlay.classList.add("active");
             document.documentElement.classList.add("fixed");
+
+            FoodCardModal.classList.remove("active");
         });
     }
 
-    const CloseButton = document.getElementById("book-modal-close-button");
+    Modal.addEventListener("click", Close);
+    Section.addEventListener("click", function (e) { e.stopPropagation() });
+
     CloseButton.addEventListener("click", Close);
     function Close()
     {
