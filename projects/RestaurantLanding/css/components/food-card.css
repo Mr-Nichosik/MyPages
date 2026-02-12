@@ -36,6 +36,21 @@
 
     max-width: clamp(250px, 20%, 540px);
     max-height: clamp(240px, 25%, 500px);
+
+    box-shadow: 0px 10px 8px 1px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+    will-change: box-shadow, transition, transform;
+
+    &:hover {
+        transform: scale(0.99);
+        box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active, &:focus {
+        transition: 0.15s;
+        transform: scale(0.92);
+    }
 }
 
 figure {
