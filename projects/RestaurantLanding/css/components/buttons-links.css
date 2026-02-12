@@ -22,7 +22,7 @@ button {
 
     will-change: background-color, box-shadow;
 
-    &:hover {
+    &:hover, &:focus {
         box-shadow: 0 0 20px var(--color-accent-dark);
     }
 
@@ -40,7 +40,7 @@ button {
 
     will-change: text-shadow;
 
-    &:hover {
+    &:hover, &:focus {
         text-shadow: 20px 5px 1px var(--color-accent-dark);
     }
 

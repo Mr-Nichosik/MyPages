@@ -14,11 +14,11 @@ a, button {
     transition: 0.3s;
     will-change: transform, shadowbox;
 
-    &:hover {
+    &:hover, &:focus {
         color: var(--color-text);
     }
 
-    &:active {
+    &:active, &:focus {
         transform: scale(0.96) translateY(0);
         transition-duration: 0.07s;
     }
@@ -49,11 +49,11 @@ a, button {
     -moz-user-drag: none;
     -o-user-drag: none;
 
-    &:hover {
+    &:hover, &:focus {
         box-shadow: 0 0 30px rgba(16, 137, 62, 0.793);
     }
 
-    &:active {
+    &:active, &:focus {
         transform: scale(0.96);
         transition-duration: 0.07s;
     }

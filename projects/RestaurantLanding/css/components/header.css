@@ -47,7 +47,7 @@ header nav, .header-button-block {
 
     will-change: background-color, box-shadow;
 
-    &:hover {
+    &:hover, &:focus {
         box-shadow: 0 0 10px var(--color-accent-dark);
     }
 

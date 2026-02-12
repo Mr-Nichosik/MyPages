@@ -50,8 +50,7 @@
     transition: 0.2s;
     font-weight: bold;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
         color: white;
         text-shadow: 0 0 8px var(--color-text);
     }

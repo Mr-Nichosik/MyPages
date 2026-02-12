@@ -45,7 +45,7 @@
     margin-bottom: 5vh;
     font-size: 1.1rem;
 
-    &:hover {
+    &:hover, &:focus {
         text-shadow: 10px 5px 1px var(--color-accent-dark);
     }
 
