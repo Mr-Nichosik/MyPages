@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <button id="burger-button"><span>☰</span></button>
+            <button id="burger-button" aria-label="Открыть меню"><span>☰</span></button>
         </nav>
 
         <div class="header-button-block">
@@ -33,7 +33,7 @@
     <div id="book-modal">
         <section id="book-modal-section" class="book-modal-section">
             <div class="book-modal-header">
-                <button id="book-modal-close-button" class="menu-link">✕</button>
+                <button id="book-modal-close-button" class="menu-link" aria-label="Закрыть окно">✕</button>
             </div>
 
             <h3>Rest</h3>
@@ -104,18 +104,10 @@
         <nav class="burger-menu-content">
             <a href="../../index.html" class="burger-link menu-link">Все проекты</a>
 
-            <a href="#content-about" class="burger-link menu-link">О нас</a>
-
-            <a href="#content-menu" class="burger-link menu-link">Меню</a>
-
-            <a href="#content-delivery" class="burger-link menu-link">Доставка</a>
-
-            <a href="#content-contacts" class="burger-link menu-link">Контакты</a>
-
             <button class="button burger-link book-button" id="burger-book-button">Бронь столика</button>
         </nav>
 
-        <button class="burger-link menu-link" id="burger-close-button">✕</button>
+        <button class="burger-link menu-link" id="burger-close-button" aria-label="Закрыть меню">✕</button>
     </div>
 
     <script src="./js/main.js"></script>

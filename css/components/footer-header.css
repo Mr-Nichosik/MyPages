@@ -29,11 +29,11 @@ header {
     text-decoration: none;
     user-select: none;
 
-    &:hover {
+    &:hover, &:focus {
         background-color: var(--color-additional);
     }
 
-    &:active {
+    &:active, &:focus {
         color: var(--color-side);
     }
 }

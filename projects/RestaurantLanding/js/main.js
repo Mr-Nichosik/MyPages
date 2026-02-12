@@ -45,7 +45,7 @@ function BookModal()
             Overlay.classList.add("active");
             document.documentElement.classList.add("fixed");
 
-            FoodCardModal.classList.remove("active");
+            if (FoodCardModal != null) FoodCardModal.classList.remove("active");
         });
     }
 

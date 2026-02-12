@@ -6,6 +6,7 @@ figure {
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    padding-top: 1vh;
 }
 
 .download-block {
