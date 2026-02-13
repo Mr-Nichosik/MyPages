@@ -1,5 +1,5 @@
 
-@media (min-width: 993px) and (any-pointer: fine) and (any-hover: hover) {
+@media (min-width: 769px) and (any-pointer: fine) and (any-hover: hover) {
     .js-enabled {
 
         .header-block-1,
@@ -23,7 +23,7 @@
     }
 }
 
-@media (max-width: 992px) and (any-pointer: coarse) and (any-hover: none) {
+@media (max-width: 768px) and (any-pointer: coarse) and (any-hover: none) {
     main {
         grid-template-columns: 0fr 1fr;
     }
