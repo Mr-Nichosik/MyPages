@@ -1,9 +1,5 @@
 .js-enabled {
     #book-modal {
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
-
         bottom: 0;
         top: 0;
         left: 0;
@@ -16,6 +12,10 @@
 }
 
 #book-modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+
     display: flex;
     justify-content: center;
     align-items: center;
