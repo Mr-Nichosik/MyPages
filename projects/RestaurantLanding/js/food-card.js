@@ -1,5 +1,5 @@
 
-function main()
+function FoodCard()
 {
     const FoodCards = document.querySelectorAll(".food-card");
 
@@ -39,4 +39,4 @@ function main()
     }
 }
 
-main();
+FoodCard();
