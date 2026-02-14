@@ -1,0 +1,23 @@
+{
+    "name": "mypages",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Mr Nichosik",
+    "scripts": {
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mr-Nichosik/MyPages.git"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/Mr-Nichosik/MyPages",
+    "devDependencies": {
+        "copy-webpack-plugin": "^13.0.1",
+        "css-loader": "^6.8.1",
+        "html-webpack-plugin": "^5.6.6",
+        "mini-css-extract-plugin": "^2.7.6",
+        "webpack": "^5.89.0",
+        "webpack-cli": "^5.1.4"
+    }
+}
