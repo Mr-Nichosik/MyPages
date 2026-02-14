@@ -1,6 +1,6 @@
 
 import "./css/main.css";
-import "./css/specific/menu.css";
+import "./css/menu.css";
 import "./css/responsive/responsive-main.css";
 import "./css/responsive/responsive-menu.css";
 
