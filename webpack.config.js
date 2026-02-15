@@ -2,7 +2,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports =
 {
@@ -56,7 +56,7 @@ module.exports =
     output:
     {
         path: path.resolve(__dirname, "dist"),
-        filename: ((pathData) => `${pathData.chunk.name.split('-')[0]}/[name].bundle.js`),
+        filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/js/[name].bundle.js`),
         clean: true,
     },
 
@@ -69,33 +69,18 @@ module.exports =
                     use: [
                         MiniCssExtractPlugin.loader,
                         {
-                            loader: 'css-loader',
+                            loader: "css-loader",
                             options: { url: false },
                         },
                     ],
                 },
-
-                // {
-                //     test: /\.(png|jpeg|jpg|gif)$/i,
-                //     use:
-                //         [
-                //             {
-                //                 loader: 'file-loader',
-                //                 options:
-                //                 {
-                //                     outputPath: projName + "/assets/img/"
-                //                 }
-                //             }
-                //         ],
-
-                // },
             ]
     },
 
     plugins:
         [
             new MiniCssExtractPlugin({
-                filename: ((pathData) => `${pathData.chunk.name.split('-')[0]}/[name].css`),
+                filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/css/[name].css`),
             }),
 
             new HtmlWebpackPlugin({
