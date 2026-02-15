@@ -1,6 +1,6 @@
 
 #content-first-screen {
-    background-image: url("../assets/img/main-background.jpg");
+    background-image: url("../../assets/img/main-background.jpg");
     background-size: cover;
     background-position: center;
     height: clamp(192px, 40vh, 500px);

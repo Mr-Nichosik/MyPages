@@ -8,53 +8,54 @@ module.exports =
 {
     entry:
     {
-        "MyPages-Index":
+        ".-Index":
             [
-                "./src/MyPages/css/main.css"
+                "./src/css/main.css"
             ],
 
-        "RestaurantLanding-Index":
+        "projects/RestaurantLanding-Index":
             [
-                "./src/RestaurantLanding/css/main.css",
-                "./src/RestaurantLanding/css/index.css",
-                "./src/RestaurantLanding/css/responsive/responsive-main.css",
-                "./src/RestaurantLanding/css/responsive/responsive-index.css",
-                "./src/RestaurantLanding/js/main.js",
-                "./src/RestaurantLanding/js/validation.js",
+                "./src/projects/RestaurantLanding/css/main.css",
+                "./src/projects/RestaurantLanding/css/specific/index.css",
+                "./src/projects/RestaurantLanding/css/responsive/responsive-main.css",
+                "./src/projects/RestaurantLanding/css/responsive/responsive-index.css",
+                "./src/projects/RestaurantLanding/js/main.js",
+                "./src/projects/RestaurantLanding/js/validation.js",
             ],
-        "RestaurantLanding-Menu":
+        "projects/RestaurantLanding-Menu":
             [
-                "./src/RestaurantLanding/css/main.css",
-                "./src/RestaurantLanding/css/menu.css",
-                "./src/RestaurantLanding/css/responsive/responsive-main.css",
-                "./src/RestaurantLanding/css/responsive/responsive-menu.css",
-                "./src/RestaurantLanding/js/main.js",
-                "./src/RestaurantLanding/js/validation.js",
-                "./src/RestaurantLanding/js/food-card.js",
+                "./src/projects/RestaurantLanding/css/main.css",
+                "./src/projects/RestaurantLanding/css/specific/menu.css",
+                "./src/projects/RestaurantLanding/css/responsive/responsive-main.css",
+                "./src/projects/RestaurantLanding/css/responsive/responsive-menu.css",
+                "./src/projects/RestaurantLanding/js/main.js",
+                "./src/projects/RestaurantLanding/js/validation.js",
+                "./src/projects/RestaurantLanding/js/food-card.js",
             ],
 
-        "SoftwareLanding-Index":
+        "projects/SoftwareLanding-Index":
             [
-                "./src/SoftwareLanding/css/main.css",
-                "./src/SoftwareLanding/css/specific/index.css",
-                "./src/SoftwareLanding/css/responsive/responsive-main.css",
-                "./src/SoftwareLanding/css/responsive/responsive-index.css",
-                "./src/SoftwareLanding/js/main.js"
+                "./src/projects/SoftwareLanding/css/main.css",
+                "./src/projects/SoftwareLanding/css/specific/index.css",
+                "./src/projects/SoftwareLanding/css/responsive/responsive-main.css",
+                "./src/projects/SoftwareLanding/css/responsive/responsive-index.css",
+                "./src/projects/SoftwareLanding/js/main.js"
             ],
-        "SoftwareLanding-Downloads":
+        "projects/SoftwareLanding-Downloads":
             [
-                "./src/SoftwareLanding/css/main.css",
-                "./src/SoftwareLanding/css/specific/downloads.css",
-                "./src/SoftwareLanding/css/responsive/responsive-main.css",
-                "./src/SoftwareLanding/css/responsive/responsive-downloads.css",
-                "./src/SoftwareLanding/js/main.js"
+                "./src/projects/SoftwareLanding/css/main.css",
+                "./src/projects/SoftwareLanding/css/specific/downloads.css",
+                "./src/projects/SoftwareLanding/css/responsive/responsive-main.css",
+                "./src/projects/SoftwareLanding/css/responsive/responsive-downloads.css",
+                "./src/projects/SoftwareLanding/js/main.js"
             ],
     },
 
     output:
     {
         path: path.resolve(__dirname, "dist"),
-        filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/js/[name].bundle.js`),
+        // filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/js/[name].bundle.js`),
+        filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/js/${pathData.chunk.name.split("-")[1]}.bundle.js`),
         clean: true,
     },
 
@@ -82,33 +83,33 @@ module.exports =
             }),
 
             new HtmlWebpackPlugin({
-                template: "./src/MyPages/index.html",
-                filename: "MyPages/index.html",
-                chunks: ["MyPages-Index"],
+                template: "./src/index.html",
+                filename: "index.html",
+                chunks: [".-Index"],
             }),
 
             new HtmlWebpackPlugin({
-                template: "./src/RestaurantLanding/index.html",
-                filename: "RestaurantLanding/index.html",
-                chunks: ["RestaurantLanding-Index"],
+                template: "./src/projects/RestaurantLanding/index.html",
+                filename: "projects/RestaurantLanding/index.html",
+                chunks: ["projects/RestaurantLanding-Index"],
             }),
 
             new HtmlWebpackPlugin({
-                template: "./src/RestaurantLanding/menu.html",
-                filename: "RestaurantLanding/menu.html",
-                chunks: ["RestaurantLanding-Menu"],
+                template: "./src/projects/RestaurantLanding/menu.html",
+                filename: "projects/RestaurantLanding/menu.html",
+                chunks: ["projects/RestaurantLanding-Menu"],
             }),
 
             new HtmlWebpackPlugin({
-                template: "./src/SoftwareLanding/index.html",
-                filename: "SoftwareLanding/index.html",
-                chunks: ["SoftwareLanding-Index"],
+                template: "./src/projects/SoftwareLanding/index.html",
+                filename: "projects/SoftwareLanding/index.html",
+                chunks: ["projects/SoftwareLanding-Index"],
             }),
 
             new HtmlWebpackPlugin({
-                template: "./src/SoftwareLanding/downloads.html",
-                filename: "SoftwareLanding/downloads.html",
-                chunks: ["SoftwareLanding-Downloads"],
+                template: "./src/projects/SoftwareLanding/downloads.html",
+                filename: "projects/SoftwareLanding/downloads.html",
+                chunks: ["projects/SoftwareLanding-Downloads"],
             }),
 
             // new HtmlWebpackPlugin({
@@ -129,9 +130,9 @@ module.exports =
 
             new CopyPlugin({
                 patterns: [
-                    { from: "./src/MyPages/assets/", to: "./MyPages/assets/" },
-                    { from: "./src/RestaurantLanding/assets/", to: "./RestaurantLanding/assets/" },
-                    { from: "./src/SoftwareLanding/assets/", to: "./SoftwareLanding/assets/" },
+                    { from: "./src/assets/", to: "./assets/" },
+                    { from: "./src/projects/RestaurantLanding/assets/", to: "./projects/RestaurantLanding/assets/" },
+                    { from: "./src/projects/SoftwareLanding/assets/", to: "./projects/SoftwareLanding/assets/" },
                 ]
             }),
         ],
