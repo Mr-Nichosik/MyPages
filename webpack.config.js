@@ -114,15 +114,11 @@ module.exports =
             }),
 
             new CopyPlugin({
-                patterns: [{ from: "./src/MyPages/assets/", to: "./MyPages/assets/" }],
-            }),
-
-            new CopyPlugin({
-                patterns: [{ from: "./src/RestaurantLanding/assets/", to: "./RestaurantLanding/assets/" }],
-            }),
-
-            new CopyPlugin({
-                patterns: [{ from: "./src/SoftwareLanding/assets/", to: "./SoftwareLanding/assets/" }],
+                patterns: [
+                    { from: "./src/MyPages/assets/", to: "./MyPages/assets/" },
+                    { from: "./src/RestaurantLanding/assets/", to: "./RestaurantLanding/assets/" },
+                    { from: "./src/SoftwareLanding/assets/", to: "./SoftwareLanding/assets/" },
+                ]
             }),
         ],
 };
