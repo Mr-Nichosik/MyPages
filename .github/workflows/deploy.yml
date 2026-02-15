@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "action-tests" ]
+    branches: [ "feature/action-tests" ]
   workflow_dispatch:
 
 permissions:
