@@ -6,8 +6,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports =
 {
-    mode: "development",
-
     entry:
     {
         "MyPages-Index":
@@ -113,21 +111,21 @@ module.exports =
                 chunks: ["SoftwareLanding-Downloads"],
             }),
 
-            new HtmlWebpackPlugin({
-                filename: "index.html",
-                templateContent: `
-                    <!DOCTYPE html>
-                    <html>
-                        <head>
-                            <meta http-equiv="refresh" content="0; URL='./MyPages/index.html'" />
-                        </head>
-                        <body>
-                            <p>Перенаправляем на по ссылке -> </p><a href="MyPages/index.html">MyPages</a><p>...</p>
-                        </body>
-                   </html>
-                `,
-                inject: false,
-            }),
+            // new HtmlWebpackPlugin({
+            //     filename: "index.html",
+            //     templateContent: `
+            //         <!DOCTYPE html>
+            //         <html>
+            //             <head>
+            //                 <meta http-equiv="refresh" content="0; URL='./MyPages/index.html'" />
+            //             </head>
+            //             <body>
+            //                 <p>Перенаправляем на по ссылке -> </p><a href="MyPages/index.html">MyPages</a><p>...</p>
+            //             </body>
+            //        </html>
+            //     `,
+            //     inject: false,
+            // }),
 
             new CopyPlugin({
                 patterns: [
