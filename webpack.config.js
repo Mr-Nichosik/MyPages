@@ -13,19 +13,19 @@ module.exports =
                 "./src/css/main.css"
             ],
 
-        "projects/RestaurantLanding-Index":
+        "RestaurantLanding-Index":
             [
                 "./src/projects/RestaurantLanding/css/main.css",
-                "./src/projects/RestaurantLanding/css/specific/index.css",
+                "./src/projects/RestaurantLanding/css/index.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-main.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-index.css",
                 "./src/projects/RestaurantLanding/js/main.js",
                 "./src/projects/RestaurantLanding/js/validation.js",
             ],
-        "projects/RestaurantLanding-Menu":
+        "RestaurantLanding-Menu":
             [
                 "./src/projects/RestaurantLanding/css/main.css",
-                "./src/projects/RestaurantLanding/css/specific/menu.css",
+                "./src/projects/RestaurantLanding/css/menu.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-main.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-menu.css",
                 "./src/projects/RestaurantLanding/js/main.js",
@@ -33,18 +33,18 @@ module.exports =
                 "./src/projects/RestaurantLanding/js/food-card.js",
             ],
 
-        "projects/SoftwareLanding-Index":
+        "SoftwareLanding-Index":
             [
                 "./src/projects/SoftwareLanding/css/main.css",
-                "./src/projects/SoftwareLanding/css/specific/index.css",
+                "./src/projects/SoftwareLanding/css/index.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-main.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-index.css",
                 "./src/projects/SoftwareLanding/js/main.js"
             ],
-        "projects/SoftwareLanding-Downloads":
+        "SoftwareLanding-Downloads":
             [
                 "./src/projects/SoftwareLanding/css/main.css",
-                "./src/projects/SoftwareLanding/css/specific/downloads.css",
+                "./src/projects/SoftwareLanding/css/downloads.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-main.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-downloads.css",
                 "./src/projects/SoftwareLanding/js/main.js"
@@ -54,8 +54,19 @@ module.exports =
     output:
     {
         path: path.resolve(__dirname, "dist"),
-        // filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/js/[name].bundle.js`),
-        filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/js/${pathData.chunk.name.split("-")[1]}.bundle.js`),
+        filename: ({ chunk }) =>
+        {
+            const [project] = chunk.name.split('-');
+            if (project === 'RestaurantLanding')
+            {
+                return `./projects/RestaurantLanding/js/[name].bundle.js`;
+            }
+            else if (project === 'SoftwareLanding')
+            {
+                return `./projects/SoftwareLanding/js/[name].bundle.js`;
+            }
+            return `./js/index.bundle.js`;
+        },
         clean: true,
     },
 
@@ -79,7 +90,19 @@ module.exports =
     plugins:
         [
             new MiniCssExtractPlugin({
-                filename: ((pathData) => `${pathData.chunk.name.split("-")[0]}/css/[name].css`),
+                filename: ({ chunk }) =>
+                {
+                    const [project] = chunk.name.split('-');
+                    if (project === 'RestaurantLanding')
+                    {
+                        return `./projects/RestaurantLanding/css/[name].css`;
+                    }
+                    else if (project === 'SoftwareLanding')
+                    {
+                        return `./projects/SoftwareLanding/css/[name].css`;
+                    }
+                    return `./css/index.css`;
+                },
             }),
 
             new HtmlWebpackPlugin({
@@ -91,25 +114,25 @@ module.exports =
             new HtmlWebpackPlugin({
                 template: "./src/projects/RestaurantLanding/index.html",
                 filename: "projects/RestaurantLanding/index.html",
-                chunks: ["projects/RestaurantLanding-Index"],
+                chunks: ["RestaurantLanding-Index"],
             }),
 
             new HtmlWebpackPlugin({
                 template: "./src/projects/RestaurantLanding/menu.html",
                 filename: "projects/RestaurantLanding/menu.html",
-                chunks: ["projects/RestaurantLanding-Menu"],
+                chunks: ["RestaurantLanding-Menu"],
             }),
 
             new HtmlWebpackPlugin({
                 template: "./src/projects/SoftwareLanding/index.html",
                 filename: "projects/SoftwareLanding/index.html",
-                chunks: ["projects/SoftwareLanding-Index"],
+                chunks: ["SoftwareLanding-Index"],
             }),
 
             new HtmlWebpackPlugin({
                 template: "./src/projects/SoftwareLanding/downloads.html",
                 filename: "projects/SoftwareLanding/downloads.html",
-                chunks: ["projects/SoftwareLanding-Downloads"],
+                chunks: ["SoftwareLanding-Downloads"],
             }),
 
             // new HtmlWebpackPlugin({
