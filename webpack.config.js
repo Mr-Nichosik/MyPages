@@ -135,28 +135,12 @@ module.exports =
                 chunks: ["SoftwareLanding-Downloads"],
             }),
 
-            // new HtmlWebpackPlugin({
-            //     filename: "index.html",
-            //     templateContent: `
-            //         <!DOCTYPE html>
-            //         <html>
-            //             <head>
-            //                 <meta http-equiv="refresh" content="0; URL='./MyPages/index.html'" />
-            //             </head>
-            //             <body>
-            //                 <p>Перенаправляем на по ссылке -> </p><a href="MyPages/index.html">MyPages</a><p>...</p>
-            //             </body>
-            //        </html>
-            //     `,
-            //     inject: false,
-            // }),
-
             new CopyPlugin({
                 patterns: [
                     { from: "./src/assets/", to: "./assets/" },
                     { from: "./src/projects/RestaurantLanding/assets/", to: "./projects/RestaurantLanding/assets/" },
-                    { from: "./src/projects/SoftwareLanding/assets/", to: "./projects/SoftwareLanding/assets/" },
-                ]
+                    { from: "./src/projects/SoftwareLanding/assets/", to: "./projects/SoftwareLanding/assets/" }
+                ],
             }),
         ],
 };
