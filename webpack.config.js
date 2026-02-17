@@ -76,14 +76,14 @@ module.exports =
             [
                 {
                     test: /\.css$/,
-                    use: 
-                    [
-                        MiniCssExtractPlugin.loader,
-                        {
-                            loader: "css-loader",
-                            options: { url: false },
-                        },
-                    ],
+                    use:
+                        [
+                            MiniCssExtractPlugin.loader,
+                            {
+                                loader: "css-loader",
+                                options: { url: false },
+                            },
+                        ],
                 },
             ]
     },
@@ -144,4 +144,11 @@ module.exports =
                 ],
             }),
         ],
+
+    devServer:
+    {
+        hot: true,
+        open: true,
+        port: 3000,
+    },
 };
