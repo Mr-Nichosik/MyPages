@@ -4,6 +4,7 @@
     padding-right: clamp(6vw, calc(12vw + 1%), calc(12vw + 10%));
     padding-left: clamp(6vw, calc(12vw + 1%), calc(12vw + 10%));
     text-align: center;
+    gap: 3vh;
 }
 
 .content-subtitle {

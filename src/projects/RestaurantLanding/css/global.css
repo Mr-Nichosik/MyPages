@@ -7,8 +7,8 @@
     --color-accent-dark: #987e5f;
     --color-invalid: #d11212;
 
-    --fs-min: 16px;
-    --fs-max: 32px;
+    --fs-min: 1rem;
+    --fs-max: 2rem;
 }
 
 @font-face {
@@ -43,6 +43,7 @@ html.fixed {
 body {
     display: flex;
     flex-direction: column;
+    gap: 4vh;
     min-height: 100vh;
     font-family: "Circe";
     color: var(--color-additional);

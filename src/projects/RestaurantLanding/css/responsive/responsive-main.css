@@ -5,12 +5,13 @@
     }
 }
 
-@media (min-width: 1024px) and (any-pointer: coarse) and (any-hover: none) {
+@media (min-width: 1024px){
     .content-section {
         display: grid;
         grid-template-columns: minmax(80px, 200px) minmax(100px, 300px) 4fr;
         grid-template-rows: 1fr;
         text-align: unset;
+        gap: 0;
     }
 
     .content-subtitle {

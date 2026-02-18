@@ -18,7 +18,7 @@ a, button {
         color: var(--color-text);
     }
 
-    &:active, &:focus {
+    &:active {
         transform: scale(0.96) translateY(0);
         transition-duration: 0.07s;
     }
@@ -53,7 +53,7 @@ a, button {
         box-shadow: 0 0 30px rgba(16, 137, 62, 0.793);
     }
 
-    &:active, &:focus {
+    &:active {
         transform: scale(0.96);
         transition-duration: 0.07s;
     }

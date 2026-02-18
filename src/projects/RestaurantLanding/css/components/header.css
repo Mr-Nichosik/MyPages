@@ -51,7 +51,7 @@ header nav, .header-button-block {
         box-shadow: 0 0 10px var(--color-accent-dark);
     }
 
-    &:active, &:focus {
+    &:active {
         background-color: var(--color-accent-dark);
     }
 }

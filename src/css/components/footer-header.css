@@ -33,7 +33,7 @@ header {
         background-color: var(--color-additional);
     }
 
-    &:active, &:focus {
+    &:active {
         color: var(--color-side);
     }
 }
