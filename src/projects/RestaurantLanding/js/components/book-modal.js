@@ -1,34 +1,5 @@
 
-function main()
-{
-    document.documentElement.classList.add("js-enabled");
-    BurgerMenu();
-    BookModal();
-}
-
-function BurgerMenu()
-{
-    const Menu = document.getElementById("burger-menu");
-
-    const BurgerButton = document.getElementById("burger-button");
-    BurgerButton.addEventListener("click", () =>
-    {
-        Menu.classList.add("active")
-        document.documentElement.classList.add("fixed");
-    });
-
-    const BurgerLinks = document.getElementsByClassName("burger-link");
-    for (item of BurgerLinks)
-    {
-        item.addEventListener("click", () =>
-        {
-            Menu.classList.remove("active")
-            document.documentElement.classList.remove("fixed");
-        });
-    }
-}
-
-function BookModal()
+export function BookModal()
 {
     const BookButtons = document.getElementsByClassName("book-button");
     const Modal = document.getElementById("book-modal");
@@ -37,7 +8,7 @@ function BookModal()
     const CloseButton = document.getElementById("book-modal-close-button");
     const FoodCardModal = document.getElementById("food-modal");
 
-    for (item of BookButtons)
+    for (let item of BookButtons)
     {
         item.addEventListener("click", () =>
         {
@@ -52,7 +23,7 @@ function BookModal()
     Modal.addEventListener("click", Close);
     Section.addEventListener("click", function (e) { e.stopPropagation() });
 
-    CloseButton.addEventListener("click", Close);
+    CloseButton.addEventListener("click", () => { Close() });
     function Close()
     {
         Modal.classList.remove("active");
@@ -60,5 +31,3 @@ function BookModal()
         document.documentElement.classList.remove("fixed");
     }
 }
-
-main();

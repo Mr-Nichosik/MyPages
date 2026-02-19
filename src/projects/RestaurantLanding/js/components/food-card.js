@@ -1,5 +1,5 @@
 
-function FoodCard()
+export function FoodCard()
 {
     const FoodCards = document.querySelectorAll(".food-card");
 
@@ -29,7 +29,7 @@ function FoodCard()
         });
     });
 
-    CloseButton.addEventListener("click", close);
+    CloseButton.addEventListener("click", () => close());
 
     function close()
     {
@@ -38,5 +38,3 @@ function FoodCard()
         document.documentElement.classList.remove("fixed");
     }
 }
-
-FoodCard();

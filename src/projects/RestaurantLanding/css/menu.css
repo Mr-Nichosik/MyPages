@@ -1,7 +1,12 @@
 @import url("./components/food-card.css");
 @import url("./components/food-modal.css");
 
-#content-contacts {
+#content-contacts
+{
     padding-top: clamp(80px, 10vh, 100px);
 }
 
+#breakfast-section
+{
+    margin-top: clamp(40px, 8vh, 50px);
+}
