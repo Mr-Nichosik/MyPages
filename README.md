@@ -25,5 +25,4 @@
 
 #### Контакты
 
-Почта: **<giga.pluha@gmail.com>**
 Kwork: **<https://kwork.ru/user/mrpluha>**
