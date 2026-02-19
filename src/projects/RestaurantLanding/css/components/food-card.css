@@ -34,9 +34,8 @@
 
     cursor: pointer;
 
-    max-width: clamp(250px, 20%, 540px);
+    width: clamp(250px, 20%, 540px);
     max-height: clamp(240px, 25%, 500px);
-
 
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
 
@@ -63,6 +62,7 @@ figure {
 
 img {
     display: block;
+    height: clamp(166px, 20vh, 360px);
 }
 
 figcaption {
