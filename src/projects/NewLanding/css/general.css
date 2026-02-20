@@ -1,0 +1,15 @@
+
+:root
+{
+    --color-bg: white;
+    --color-accent: rgb(64, 188, 208);
+    --color-accent-secondary: rgb(242, 181, 56);
+    --color-text: rgb(68, 64, 60);
+}
+
+*
+{
+    margin: 0px;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
