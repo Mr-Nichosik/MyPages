@@ -36,7 +36,7 @@ module.exports =
                 "./src/projects/SoftwareLanding/css/index.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-main.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-index.css",
-                "./src/projects/SoftwareLanding/js/main.js"
+                "./src/projects/SoftwareLanding/js/index.js"
             ],
         "SoftwareLanding-Downloads":
             [
@@ -44,7 +44,7 @@ module.exports =
                 "./src/projects/SoftwareLanding/css/downloads.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-main.css",
                 "./src/projects/SoftwareLanding/css/responsive/responsive-downloads.css",
-                "./src/projects/SoftwareLanding/js/main.js"
+                "./src/projects/SoftwareLanding/js/downloads.js"
             ],
     },
 
@@ -93,11 +93,11 @@ module.exports =
                     const [project] = chunk.name.split('-');
                     if (project === 'RestaurantLanding')
                     {
-                        return `./projects/RestaurantLanding/css/[name].css`;
+                        return `./projects/RestaurantLanding/css/[name].bundle.css`;
                     }
                     else if (project === 'SoftwareLanding')
                     {
-                        return `./projects/SoftwareLanding/css/[name].css`;
+                        return `./projects/SoftwareLanding/css/[name].bundle.css`;
                     }
                     return `./css/index.css`;
                 },

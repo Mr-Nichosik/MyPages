@@ -1,12 +1,5 @@
 
-function main()
-{
-    document.documentElement.classList.add("js-enabled");
-
-    BurgerLogic();
-}
-
-function BurgerLogic()
+export function BurgerMenu()
 {
     const BurgerMenuBlock = document.getElementById("burger-menu-block");
     const DisplayOverlay = document.getElementById("display-overlay");
@@ -35,5 +28,3 @@ function BurgerLogic()
         DisplayOverlay.classList.remove("active");
     }
 }
-
-main();

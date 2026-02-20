@@ -1,10 +1,10 @@
 
-import { Validator } from "./components/validator";
-import { BurgerMenu } from "./components/burger-menu";
-import { BookModal } from "./components/book-modal";
-import { FoodCard } from "./components/food-card";
+import { Validator } from "./modules/validator";
+import { BurgerMenu } from "./modules/burger-menu";
+import { BookModal } from "./modules/book-modal";
+import { FoodCard } from "./modules/food-card";
 
-class App
+class MenuPage
 {
     constructor()
     {
@@ -17,4 +17,4 @@ class App
     }
 }
 
-new App();
+new MenuPage();
