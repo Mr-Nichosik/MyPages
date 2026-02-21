@@ -19,7 +19,7 @@ module.exports =
                 "./src/projects/RestaurantLanding/css/index.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-main.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-index.css",
-                "./src/projects/RestaurantLanding/js/index.js",
+                "./src/projects/RestaurantLanding/js/index.ts",
             ],
         "RestaurantLanding-Menu":
             [
@@ -27,7 +27,7 @@ module.exports =
                 "./src/projects/RestaurantLanding/css/menu.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-main.css",
                 "./src/projects/RestaurantLanding/css/responsive/responsive-menu.css",
-                "./src/projects/RestaurantLanding/js/menu.js",
+                "./src/projects/RestaurantLanding/js/menu.ts",
             ],
 
         "SoftwareLanding-Index":
@@ -71,6 +71,12 @@ module.exports =
     {
         rules:
             [
+                {
+                    test: /\.tsx?$/,
+                    use: 'ts-loader',
+                    exclude: /node_modules/,
+                },
+
                 {
                     test: /\.css$/,
                     use:

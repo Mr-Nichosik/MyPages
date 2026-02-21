@@ -1,8 +1,8 @@
 
-import { validateName } from "../validators/name-validator";
-import { validatePhone } from "../validators/phone-validator";
-import { validateDate } from "../validators/date-validator";
-import { validateNumber } from "../validators/number-validator";
+import { validateName } from "./validators/name-validator";
+import { validatePhone } from "./validators/phone-validator";
+import { validateDate } from "./validators/date-validator";
+import { validateNumber } from "./validators/number-validator";
 
 export class Validator 
 {
