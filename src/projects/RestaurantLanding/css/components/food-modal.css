@@ -1,4 +1,10 @@
-#food-modal {
+dialog
+{
+    all: unset;
+}
+
+#food-modal
+{
     visibility: hidden;
     opacity: 0;
     transform: scale(0);
@@ -21,13 +27,15 @@
     white-space: pre-line;
 }
 
-#food-modal.active {
+#food-modal.active
+{
     visibility: visible;
     opacity: 1;
     transform: scale(1);
 }
 
-#food-modal-section {
+#food-modal-section
+{
     padding: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -44,21 +52,25 @@
     outline: 2px solid var(--color-additional);
 }
 
-.food-modal-header {
+.food-modal-header
+{
     display: flex;
     justify-content: flex-end;
     color: var(--color-accent);
 }
 
-#food-modal-close-button {
+#food-modal-close-button
+{
     color: var(--color-accent);
 }
 
-#food-modal-description {
+#food-modal-description
+{
     font-size: 1.1rem;
 }
 
-#food-modal-price {
+#food-modal-price
+{
     font-size: 1.2rem;
     font-weight: 600;
 }

@@ -7,6 +7,7 @@
     <meta name="description"
         content="Элитный ресторан Rest на Взлётке в Красноярске. Премиумальная кухня, авторские блюда, доставка и бронь.">
 
+    <link rel="preload" href="./assets/fonts/Circe-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <title>Ресторан Rest</title>
 </head>
 
@@ -100,7 +101,7 @@
         </section>
     </main>
 
-    <div id="book-modal">
+    <dialog id="book-modal">
         <section id="book-modal-section" class="book-modal-section">
             <div class="book-modal-header">
                 <button id="book-modal-close-button" class="menu-link" aria-label="Закрыть окно">✕</button>
@@ -150,7 +151,7 @@
                 <button id="book-submit-button" class="button" name="submit" readonly>Отправить</button>
             </form>
         </section>
-    </div>
+    </dialog>
 
     <footer>
         <div class="footer-content">
@@ -165,7 +166,8 @@
                     </div>
                 </div>
 
-                <a href="https://github.com/Mr-Nichosik/MyPages" class="menu-link footer-link footer-github-link">GitHub</a>
+                <a href="https://github.com/Mr-Nichosik/MyPages"
+                    class="menu-link footer-link footer-github-link">GitHub</a>
 
                 <a href="../../index.html" class="menu-link footer-link footer-main-page-link">Все проекты</a>
             </section>

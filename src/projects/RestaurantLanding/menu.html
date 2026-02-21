@@ -7,6 +7,7 @@
     <meta name="description"
         content="Элитный ресторан Rest на Взлётке в Красноярске. Премиумальная кухня, авторские блюда, доставка и бронь. Страница с меню.">
 
+    <link rel="preload" href="./assets/fonts/Circe-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <title>Ресторан Rest</title>
 </head>
 
@@ -383,7 +384,7 @@
         </section>
     </main>
 
-    <div id="book-modal">
+    <dialog id="book-modal">
         <section id="book-modal-section" class="book-modal-section">
             <div class="book-modal-header">
                 <button id="book-modal-close-button" class="menu-link" aria-label="Закрыть окно">✕</button>
@@ -434,7 +435,7 @@
                 <button id="book-submit-button" class="button" name="submit" readonly>Отправить</button>
             </form>
         </section>
-    </div>
+    </dialog>
 
     <footer>
         <div class="footer-content">
@@ -524,7 +525,7 @@
         <button class="burger-link menu-link" id="burger-close-button" aria-label="Закрыть меню">✕</button>
     </div>
 
-    <div id="food-modal">
+    <dialog id="food-modal">
         <section id="food-modal-section" class="food-modal-section">
             <div class="food-modal-header">
                 <button id="food-modal-close-button" class="menu-link" aria-label="Закрыть окно">✕</button>
@@ -538,7 +539,7 @@
 
             <button class="button book-button">Забронировать столик</button>
         </section>
-    </div>
+    </dialog>
 
     <div id="overlay"></div>
 </body>

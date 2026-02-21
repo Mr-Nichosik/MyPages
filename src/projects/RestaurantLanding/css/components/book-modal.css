@@ -1,5 +1,7 @@
-.js-enabled {
-    #book-modal {
+.js-enabled
+{
+    #book-modal
+    {
         bottom: 0;
         top: 0;
         left: 0;
@@ -11,7 +13,13 @@
     }
 }
 
-#book-modal {
+dialog
+{
+    all: unset;
+}
+
+#book-modal
+{
     visibility: hidden;
     opacity: 0;
     position: fixed;
@@ -26,13 +34,15 @@
     margin-top: 2vh;
 }
 
-#book-modal.active {
+#book-modal.active
+{
     visibility: visible;
     opacity: 1;
     transform: scale(1);
 }
 
-.book-modal-section {
+.book-modal-section
+{
     color: var(--color-bg);
     background-color: var(--color-additional);
 
@@ -48,40 +58,47 @@
     gap: 2vh;
 }
 
-.book-modal-header {
+.book-modal-header
+{
     display: flex;
     justify-content: flex-end;
     color: var(--color-accent);
 }
 
-.book-modal-header button {
+.book-modal-header button
+{
     color: var(--color-accent);
 }
 
-.book-modal-section h3 {
+.book-modal-section h3
+{
     color: var(--color-accent);
 }
 
-#book-modal-form {
+#book-modal-form
+{
     display: flex;
     flex-direction: column;
     gap: 2vh;
     align-items: stretch;
 }
 
-.form-group {
+.form-group
+{
     display: flex;
     justify-content: stretch;
 }
 
-.form-group label {
+.form-group label
+{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     width: 100%;
 }
 
-.form-group input {
+.form-group input
+{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -103,12 +120,14 @@
     text-align: center;
 }
 
-.form-group input.invalid {
+.form-group input.invalid
+{
     outline: 1px solid var(--color-invalid);
 }
 
 .form-group input[type="date"]::-webkit-datetime-edit,
-.form-group input[type="time"]::-webkit-datetime-edit {
+.form-group input[type="time"]::-webkit-datetime-edit
+{
     font-family: "Circe", sans-serif;
     color: var(--color-bg);
 }
