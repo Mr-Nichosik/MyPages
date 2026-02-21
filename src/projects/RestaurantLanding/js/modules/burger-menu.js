@@ -1,22 +1,42 @@
 
-export function BurgerMenu()
+export class BurgerMenu
 {
-    const Menu = document.getElementById("burger-menu");
+    Menu;
+    BurgerButton;
+    BurgerLinks;
 
-    const BurgerButton = document.getElementById("burger-button");
-    BurgerButton.addEventListener("click", () =>
+    constructor()
     {
-        Menu.classList.add("active")
-        document.documentElement.classList.add("fixed");
-    });
+        this.Menu = document.getElementById("burger-menu");
+        this.BurgerButton = document.getElementById("burger-button");
+        this.BurgerLinks = document.getElementsByClassName("burger-link");
 
-    const BurgerLinks = document.getElementsByClassName("burger-link");
-    for (let item of BurgerLinks)
+        this.HandleOpening();
+        this.HandleClosing();
+    }
+
+    HandleOpening()
     {
-        item.addEventListener("click", () =>
+        this.BurgerButton.addEventListener("click", () => this.Open());
+    }
+
+    HandleClosing()
+    {
+        for (let item of this.BurgerLinks)
         {
-            Menu.classList.remove("active")
-            document.documentElement.classList.remove("fixed");
-        });
+            item.addEventListener("click", () => this.Close());
+        }
+    }
+
+    Open()
+    {
+        this.Menu.classList.add("active")
+        document.documentElement.classList.add("fixed");
+    }
+
+    Close()
+    {
+        this.Menu.classList.remove("active")
+        document.documentElement.classList.remove("fixed");
     }
 }

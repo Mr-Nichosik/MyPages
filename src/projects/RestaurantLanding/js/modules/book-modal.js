@@ -1,33 +1,54 @@
 
-export function BookModal()
+export class BookModal
 {
-    const BookButtons = document.getElementsByClassName("book-button");
-    const Modal = document.getElementById("book-modal");
-    const Section = document.getElementById("book-modal-section")
-    const Overlay = document.getElementById("overlay");
-    const CloseButton = document.getElementById("book-modal-close-button");
-    const FoodCardModal = document.getElementById("food-modal");
+    Overlay;
+    BookButtons;
+    Modal;
+    ModalSection;
+    CloseButton;
+    FoodCardModal;
 
-    for (let item of BookButtons)
+    constructor()
     {
-        item.addEventListener("click", () =>
-        {
-            Modal.classList.add("active");
-            Overlay.classList.add("active");
-            document.documentElement.classList.add("fixed");
+        this.Overlay = document.getElementById("overlay");
+        this.BookButtons = document.getElementsByClassName("book-button");
+        this.Modal = document.getElementById("book-modal");
+        this.ModalSection = document.getElementById("book-modal-section")
+        this.CloseButton = document.getElementById("book-modal-close-button");
+        this.FoodCardModal = document.getElementById("food-modal");
 
-            if (FoodCardModal != null) FoodCardModal.classList.remove("active");
-        });
+        this.HandleOpening();
+        this.HandleClosing();
     }
 
-    Modal.addEventListener("click", Close);
-    Section.addEventListener("click", function (e) { e.stopPropagation() });
-
-    CloseButton.addEventListener("click", () => { Close() });
-    function Close()
+    HandleOpening()
     {
-        Modal.classList.remove("active");
-        Overlay.classList.remove("active");
+        for (let item of this.BookButtons)
+        {
+            item.addEventListener("click", () => this.Open());
+        }
+    }
+
+    HandleClosing()
+    {
+        this.Modal.addEventListener("click", () => this.Close());
+        this.ModalSection.addEventListener("click", function (e) { e.stopPropagation() });
+        this.CloseButton.addEventListener("click", () => this.Close());
+    }
+
+    Open()
+    {
+        this.Modal.classList.add("active");
+        this.Overlay.classList.add("active");
+        document.documentElement.classList.add("fixed");
+
+        if (this.FoodCardModal != null) this.FoodCardModal.classList.remove("active");
+    }
+
+    Close()
+    {
+        this.Modal.classList.remove("active");
+        this.Overlay.classList.remove("active");
         document.documentElement.classList.remove("fixed");
     }
 }

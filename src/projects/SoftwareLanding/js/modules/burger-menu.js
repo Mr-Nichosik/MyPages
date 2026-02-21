@@ -1,30 +1,47 @@
 
-export function BurgerMenu()
+export class BurgerMenu
 {
-    const BurgerMenuBlock = document.getElementById("burger-menu-block");
-    const DisplayOverlay = document.getElementById("display-overlay");
-    const RightSideBar = document.getElementById("burger-menu-right-sidebar")
-    const Main = document.getElementById("main");
-    const Body = document.body;
+    BurgerButton;
+    Menu;
+    Overlay;
+    RightSideBar;
+    Main;
 
-    RightSideBar.addEventListener("click", CloseMenu);
-
-    const BurgerButton = document.getElementById("burger-menu-button");
-    BurgerButton.addEventListener("click", ShowMenu);
-
-    function ShowMenu() 
+    constructor()
     {
-        Body.classList.add("fixed");
-        Main.classList.add("inactive");
-        BurgerMenuBlock.classList.add("active");
-        DisplayOverlay.classList.add("active");
+        this.BurgerButton = document.getElementById("burger-menu-button");
+        this.Menu = document.getElementById("burger-menu-block");
+
+        this.DisplayOverlay = document.getElementById("display-overlay");
+        this.RightSideBar = document.getElementById("burger-menu-right-sidebar")
+        this.Main = document.querySelector("main");
     }
 
-    function CloseMenu()
+    HandleOpening()
     {
-        Body.classList.remove("fixed");
-        Main.classList.remove("inactive");
-        BurgerMenuBlock.classList.remove("active");
-        DisplayOverlay.classList.remove("active");
+        this.BurgerButton.addEventListener("click", () => this.Open());
+    }
+
+    HandleClosing()
+    {
+        this.RightSideBar.addEventListener("click", () => this.Close());
+    }
+
+    Open()
+    {
+        this.Menu.classList.add("active");
+        this.Overlay.classList.add("active");
+
+        this.Main.classList.add("inactive");
+        document.documentElement.classList.add("fixed");
+    }
+
+    Close()
+    {
+        this.Menu.classList.remove("active");
+        this.Overlay.classList.remove("active");
+
+        this.Main.classList.remove("inactive");
+        document.documentElement.classList.remove("fixed");
     }
 }

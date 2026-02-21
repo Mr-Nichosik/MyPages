@@ -10,9 +10,9 @@ class IndexPage
         document.documentElement.classList.add("js-enabled");
 
         new Validator();
-        BurgerMenu();
-        BookModal();
+        new BurgerMenu();
+        new BookModal();
     }
 }
 
-new IndexPage();
+const App = new IndexPage();

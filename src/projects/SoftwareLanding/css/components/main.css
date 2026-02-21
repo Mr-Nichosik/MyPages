@@ -1,5 +1,5 @@
-
-main {
+main
+{
     background-color: var(--color-bg);
     margin-top: clamp(8vh, calc(9.5vh + 8.5vw), 25vh);
     display: grid;
@@ -10,17 +10,20 @@ main {
     flex: 1 0 auto;
 }
 
-main.inactive {
+main.inactive
+{
     transform: scale(0.98);
 }
 
-.right-separator {
+.right-separator
+{
     background-color: var(--color-bg);
     color: var(--color-text);
     border-right: 1px solid var(--color-secondary);
 }
 
-.main-content-block {
+.main-content-block
+{
     background-color: var(--color-bg);
     color: var(--color-text);
     display: flex;

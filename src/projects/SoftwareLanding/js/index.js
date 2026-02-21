@@ -6,8 +6,8 @@ class IndexPage
     constructor()
     {
         document.documentElement.classList.add("js-enabled");
-        BurgerMenu();
+        new BurgerMenu();
     }
 }
 
-new IndexPage();
+const App = new IndexPage();

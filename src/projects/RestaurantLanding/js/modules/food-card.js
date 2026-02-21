@@ -1,40 +1,64 @@
 
-export function FoodCard()
+export class FoodCard
 {
-    const FoodCards = document.querySelectorAll(".food-card");
+    FoodCards;
 
-    const FoodCardModal = document.getElementById("food-modal");
-    const FoodModalSection = document.getElementById("food-modal-section");
-    const FoodModalTitle = document.getElementById("food-modal-title");
-    const FoodModalDescription = document.getElementById("food-modal-description");
-    const FoodModalPrice = document.getElementById("food-modal-price");
-    const CloseButton = document.getElementById("food-modal-close-button");
+    FoodCardModal;
+    FoodModalSection;
+    FoodModalTitle;
+    FoodModalDescription;
+    FoodModalPrice;
+    CloseButton;
 
-    const Overlay = document.getElementById("overlay")
+    Overlay;
 
-    FoodModalSection.addEventListener("click", function (e) { e.stopPropagation() });
-    FoodCardModal.addEventListener("click", close);
-
-    FoodCards.forEach(card =>
+    constructor()
     {
-        card.addEventListener("click", () =>
+        this.FoodCards = document.querySelectorAll(".food-card");
+
+        this.FoodCardModal = document.getElementById("food-modal");
+        this.FoodModalSection = document.getElementById("food-modal-section");
+        this.FoodModalTitle = document.getElementById("food-modal-title");
+        this.FoodModalDescription = document.getElementById("food-modal-description");
+        this.FoodModalPrice = document.getElementById("food-modal-price");
+        this.FoodModalCloseButton = document.getElementById("food-modal-close-button");
+
+        this.Overlay = document.getElementById("overlay")
+
+        this.HandleOpening();
+        this.HandleClosing();
+    }
+
+    HandleOpening()
+    {
+        this.FoodCards.forEach(card =>
         {
-            FoodCardModal.classList.add("active");
-            Overlay.classList.add("active");
-            document.documentElement.classList.add("fixed");
-
-            FoodModalTitle.textContent = card.querySelector("figcaption").textContent;
-            FoodModalDescription.textContent = card.getAttribute("data-description");
-            FoodModalPrice.textContent = card.querySelector(".food-price").textContent;
+            card.addEventListener("click", () => this.Open(card));
         });
-    });
+    }
 
-    CloseButton.addEventListener("click", () => close());
-
-    function close()
+    HandleClosing()
     {
-        FoodCardModal.classList.remove("active");
-        Overlay.classList.remove("active");
+        this.FoodModalSection.addEventListener("click", (e) => e.stopPropagation());
+        this.FoodCardModal.addEventListener("click", () => this.Close());
+        this.FoodModalCloseButton.addEventListener("click", () => Close());
+    }
+
+    Open(card)
+    {
+        this.FoodCardModal.classList.add("active");
+        this.Overlay.classList.add("active");
+        document.documentElement.classList.add("fixed");
+
+        this.FoodModalTitle.textContent = card.querySelector("figcaption").textContent;
+        this.FoodModalDescription.textContent = card.getAttribute("data-description");
+        this.FoodModalPrice.textContent = card.querySelector(".food-price").textContent;
+    }
+
+    Close()
+    {
+        this.FoodCardModal.classList.remove("active");
+        this.Overlay.classList.remove("active");
         document.documentElement.classList.remove("fixed");
     }
 }

@@ -1,15 +1,23 @@
-figure {
+figure
+{
     all: unset;
 }
 
-.content {
+.main-content-block
+{
+    gap: clamp(10px, calc(5px + 4vw - 4vh), 150px);
+}
+
+.content
+{
     display: flex;
     flex-direction: column;
     gap: 3vh;
     padding-top: 1vh;
 }
 
-.download-block {
+.download-block
+{
     display: flex;
     align-items: center;
     gap: 1vw;

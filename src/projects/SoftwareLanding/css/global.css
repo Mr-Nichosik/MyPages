@@ -1,4 +1,5 @@
-:root {
+:root
+{
     --color-bg: rgb(8, 9, 11);
     --color-bg-transparent: rgba(8, 9, 11, 0.793);
     --color-bg-transparent-1: rgba(8, 9, 11, 0.3);
@@ -11,29 +12,34 @@
     --fs-max: 2rem;
 }
 
-::selection {
+::selection
+{
     background-color: var(--color-accent);
     color: white;
 }
 
-* {
+*
+{
     -webkit-tap-highlight-color: transparent;
 }
 
-html {
+html
+{
     scrollbar-color: var(--color-text) var(--color-bg);
     font-size: clamp(var(--fs-min), calc(var(--fs-min) + 0.7vw), var(--fs-max));
 }
 
-body {
+html.fixed
+{
+    overflow: hidden;
+}
+
+body
+{
     background-color: var(--color-bg);
     margin: 0;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-body.fixed {
-    overflow: hidden;
 }

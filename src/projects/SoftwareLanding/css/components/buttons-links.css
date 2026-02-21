@@ -1,8 +1,11 @@
-button {
+button
+{
     all: unset;
 }
 
-a, button {
+a,
+button
+{
     text-decoration: none;
     user-select: none;
     color: inherit;
@@ -10,21 +13,26 @@ a, button {
 
 .header-link,
 .burger-link,
-.footer-link {
+.footer-link
+{
     transition: 0.3s;
     will-change: transform, shadowbox;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus
+    {
         color: var(--color-text);
     }
 
-    &:active {
+    &:active
+    {
         transform: scale(0.96) translateY(0);
         transition-duration: 0.07s;
     }
 }
 
-.button {
+.button
+{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -49,17 +57,21 @@ a, button {
     -moz-user-drag: none;
     -o-user-drag: none;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus
+    {
         box-shadow: 0 0 30px rgba(16, 137, 62, 0.793);
     }
 
-    &:active {
+    &:active
+    {
         transform: scale(0.96);
         transition-duration: 0.07s;
     }
 }
 
-.accent-button {
+.accent-button
+{
     background-color: var(--color-accent);
     box-shadow: 0 0 14px rgba(16, 137, 62, 0.793);
 }

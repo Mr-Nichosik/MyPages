@@ -21,10 +21,11 @@ footer
     flex-wrap: wrap;
 }
 
-.footer-content h3
+.footer-content h2
 {
     color: var(--color-bg);
     font-weight: 400;
+    font-size: 1rem;
 
     grid-row: 1;
     grid-column: 1;
@@ -33,7 +34,7 @@ footer
 .footer-attribution
 {
     display: grid;
-    grid-template-columns:  minmax(auto, 240px) minmax(auto, 190px) minmax(auto, 190px);
+    grid-template-columns: minmax(auto, 240px) minmax(auto, 190px) minmax(auto, 190px);
     grid-template-rows: auto auto;
     column-gap: clamp(5px, 1vw, 8px);
     row-gap: clamp(5px, 2vh, 20px);

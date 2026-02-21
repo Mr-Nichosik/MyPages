@@ -4,17 +4,32 @@ import { validatePhone } from "./validators/phone-validator";
 import { validateDate } from "./validators/date-validator";
 import { validateNumber } from "./validators/number-validator";
 
+interface ValidatorsMap
+{
+    [key: string]: Function;
+}
+
 export class Validator 
 {
+    readonly Form: HTMLFormElement;
+
+    readonly Name: HTMLInputElement;
+    readonly Phone: HTMLInputElement;
+    readonly DateValue: HTMLInputElement;
+    readonly TimeValue: HTMLInputElement;
+    readonly GuestsNumber: HTMLInputElement;
+
+    readonly Validators: ValidatorsMap;
+
     constructor()
     {
-        this.Form = document.getElementById("book-modal-form");
+        this.Form = document.querySelector<HTMLFormElement>("#book-modal-form")!;
 
-        this.Name = this.Form.querySelector("[name=\"name\"]");
-        this.Phone = this.Form.querySelector("[name=\"phone\"]");
-        this.DateValue = this.Form.querySelector("[name=\"date\"]");
-        this.TimeValue = this.Form.querySelector("[name=\"time\"]");
-        this.GuestsNumber = this.Form.querySelector("[name=\"number\"]");
+        this.Name = this.Form.querySelector<HTMLInputElement>("[name=\"name\"]")!;
+        this.Phone = this.Form.querySelector<HTMLInputElement>("[name=\"phone\"]")!;
+        this.DateValue = this.Form.querySelector<HTMLInputElement>("[name=\"date\"]")!;
+        this.TimeValue = this.Form.querySelector<HTMLInputElement>("[name=\"time\"]")!;
+        this.GuestsNumber = this.Form.querySelector<HTMLInputElement>("[name=\"number\"]")!;
 
         this.Validators =
         {
@@ -27,7 +42,7 @@ export class Validator
         this.Init()
     }
 
-    Init()
+    Init(): void
     {
         this.Form.addEventListener("submit", (event) => { this.HandleValidity(this.Form, event) });
 
@@ -42,7 +57,7 @@ export class Validator
         this.GuestsNumber.addEventListener("input", () => { this.HandleNumber(this.GuestsNumber) });
     }
 
-    HandleValidity(Form, event)
+    HandleValidity(Form: HTMLFormElement, event: Event): void
     {
         if (!Form.checkValidity())
         {
@@ -57,37 +72,37 @@ export class Validator
         }
     }
 
-    HandleName(Name)
+    HandleName(Name: HTMLInputElement): void
     {
         Name.value = this.Validators.Name(Name.value);
         Name.classList.remove("invalid");
     }
 
-    HandlePhone(Phone)
+    HandlePhone(Phone: HTMLInputElement): void
     {
         console.log(Phone.value);
         Phone.value = this.Validators.Phone(Phone.value)
         Phone.classList.remove("invalid");
     }
 
-    HandleDate(Date)
+    HandleDate(Date: HTMLInputElement): void
     {
         Date.value = this.Validators.Date(Date.value)
         Date.classList.remove("invalid");
     }
 
-    HandleTime(Time)
+    HandleTime(Time: HTMLInputElement): void
     {
         Time.classList.remove("invalid");
     }
 
-    HandleNumber(Number)
+    HandleNumber(Number: HTMLInputElement): void
     {
         Number.value = this.Validators.Number(Number.value)
         Number.classList.remove("invalid");
     }
 
-    SubmitForm()
+    SubmitForm(): void
     {
         console.log("Form is valid");
     }

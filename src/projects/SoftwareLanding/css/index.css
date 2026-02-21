@@ -1,54 +1,65 @@
-
-.content {
-    h1 {
+.content
+{
+    h1
+    {
         font-weight: 400;
         font-size: 1.9rem;
     }
 
-    h2 {
+    h2
+    {
         font-weight: 300;
         font-size: 1.35rem;
     }
 }
 
-.buttons-block {
+.buttons-block
+{
     display: flex;
     gap: 1vw;
 }
 
-.photo-1-section {
+.photo-1-section
+{
     display: grid;
     grid-template-columns: clamp(200px, 48vw, 700px) 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     gap: 14px;
 
-    p {
+    p
+    {
         text-align: center;
         font-size: 0.95rem;
     }
 }
 
-.left-photo-1-section {
+.left-photo-1-section
+{
     order: 1;
 }
 
-.right-photo-1-section {
+.right-photo-1-section
+{
     order: 2;
 }
 
-img {
+img
+{
     max-width: 100%;
     border-radius: 30px;
     border: solid var(--color-bg);
 }
 
-.description {
-    h2 {
+.description
+{
+    h2
+    {
         text-align: center;
     }
 
-    p {
+    p
+    {
         text-align: center;
         font-size: 1.1rem;
     }

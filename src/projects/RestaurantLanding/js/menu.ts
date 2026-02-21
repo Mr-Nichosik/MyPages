@@ -11,10 +11,10 @@ class MenuPage
         document.documentElement.classList.add("js-enabled");
 
         new Validator();
-        BurgerMenu();
-        BookModal();
-        FoodCard();
+        new BurgerMenu();
+        new BookModal();
+        new FoodCard();
     }
 }
 
-new MenuPage();
+const App = new MenuPage();

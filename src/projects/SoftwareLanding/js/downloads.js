@@ -6,8 +6,8 @@ class DownloadsPage
     constructor()
     {
         document.documentElement.classList.add("js-enabled");
-        BurgerMenu();
+        new BurgerMenu();
     }
 }
 
-new DownloadsPage();
+const App = new DownloadsPage();
