@@ -1,8 +1,9 @@
-@import url("./responsive/responsive-general.css");
+
 @import url("./components/button-link.css");
 @import url("./components/header.css");
 @import url("./components/main.css");
 @import url("./components/footer.css");
+@import url("./responsive/responsive-general.css");
 
 :root
 {
@@ -14,9 +15,21 @@
     --color-accent-1: #4E6D0B;
     --color-accent-2: #D2FD9C;
 
+    --fs-mobile: 0.875rem; /* 87,5% * 16px (default browser font size) = 14px */
+    --fs-tablet: 0.875rem;
+    --fs-pc: 1rem;
+
     --fs-mobile-small: 0.875rem;
-    --fs-mobile-medium: 1rem;
+    --fs-mobile-medium: 1.1428rem;
     --fs-mobile-large: 1.5rem;
+
+    --fs-tablet-small: 1rem;
+    --fs-tablet-medium: 1.2857rem;
+    --fs-tablet-large: 1.1714rem;
+
+    --fs-pc-small: 0.875rem;
+    --fs-pc-medium: 1.1428rem;
+    --fs-pc-large: 1.1714rem;
 }
 
 @font-face
@@ -40,7 +53,7 @@
 html
 {
     font-family: "Geist";
-    font-size: var(--fs-mobile-small);
+    font-size: var(--fs-mobile);
 }
 
 body

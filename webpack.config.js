@@ -49,7 +49,6 @@ module.exports =
 
         "EniseiGardens-Index":
             [
-                "./src/projects/EniseiGardens/css/general.css",
                 "./src/projects/EniseiGardens/css/index.css",
                 "./src/projects/EniseiGardens/js/index.js"
             ],

@@ -1,0 +1,68 @@
+@media (min-width: 800px)
+{
+    main #patio-outdoors .article-image
+    {
+        background-image: url("../assets/img/patio-outdoors/patio-outdoors-medium.png");
+    }
+
+    main .article-gallery-info-block
+    {
+        font-size: var(--fs-tablet-medium);
+    }
+
+    main #gardens
+    {
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+    }
+
+    main #gardens .article-image
+    {
+        background-image: url("../assets/img/gardens/gardens-medium.png");
+    }
+
+    main #gardens .article-info-block
+    {
+        width: 218px;
+        height: 192px;
+    }
+
+    main #water-and-stone
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    main #water-and-stone-first-section .article-image
+    {
+        background-image: url("../assets/img/water-and-stone/water-and-stone-medium.png");
+        width: 400px;
+    }
+
+    main #conifiers .article-image
+    {
+        background-image: url("../assets/img/conifiers/conifiers-medium.png");
+        height: 409px;
+    }
+
+    main #conifiers .article-info-block
+    {
+        width: 218px;
+        height: 192px;
+    }
+
+    main #stone-and-foliage-harmony .article-image
+    {
+        background-image: url("../assets/img/stone-and-foliage-harmony/stone-and-foliage-harmony-medium.png");
+        height: 409px;
+        width: 409px;
+    }
+
+    main #stone-and-foliage-harmony .article-info-block
+    {
+        width: 218px;
+        height: 192px;
+    }
+}

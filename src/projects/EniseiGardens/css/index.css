@@ -1,3 +1,4 @@
+@import url("./general.css");
 @import url("./responsive/responsive-index.css");
 
 .article-info-block
@@ -31,7 +32,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
-    font-size: 1.1428rem;
+    font-size: var(--fs-mobile-medium);
 }
 
 #patio-outdoors
