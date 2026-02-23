@@ -51,8 +51,6 @@ module.exports =
             [
                 "./src/projects/EniseiGardens/css/general.css",
                 "./src/projects/EniseiGardens/css/index.css",
-                "./src/projects/EniseiGardens/css/responsive/responsive-index.css",
-                "./src/projects/EniseiGardens/css/responsive/responsive-main.css",
                 "./src/projects/EniseiGardens/js/index.js"
             ],
     },

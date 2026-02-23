@@ -1,3 +1,4 @@
+@import url("./responsive/responsive-general.css");
 @import url("./components/button-link.css");
 @import url("./components/header.css");
 @import url("./components/main.css");
@@ -13,8 +14,9 @@
     --color-accent-1: #4E6D0B;
     --color-accent-2: #D2FD9C;
 
-    --fs-mobile: 0.875rem;
-    --fs-large: 1rem;
+    --fs-mobile-small: 0.875rem;
+    --fs-mobile-medium: 1rem;
+    --fs-mobile-large: 1.5rem;
 }
 
 @font-face
@@ -38,7 +40,7 @@
 html
 {
     font-family: "Geist";
-    font-size: var(--fs-mobile);
+    font-size: var(--fs-mobile-small);
 }
 
 body

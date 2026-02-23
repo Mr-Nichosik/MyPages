@@ -17,3 +17,22 @@ h1
     font-weight: 300;
     font-size: 2rem;
 }
+
+.burger-button
+{
+    /* background-image: url("../assets/img/hamburger-menu/horizontal.png"), url("../assets/img/hamburger-menu/vertical.png"), url("../assets/img/hamburger-menu/ellipse.png"); */
+
+    background-image: url("../assets/img/hamburger-menu/normal.png");
+
+    background-position-x: center, center, center;
+    background-position-y: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: initial;
+
+    height: 40px;
+    width: 40px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+}
