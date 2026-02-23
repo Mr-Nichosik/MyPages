@@ -10,7 +10,7 @@ module.exports =
     {
         ".-Index":
             [
-                "./src/css/main.css"
+                "./src/css/index.css"
             ],
 
         "RestaurantLanding-Index":
@@ -46,6 +46,15 @@ module.exports =
                 "./src/projects/SoftwareLanding/css/responsive/responsive-downloads.css",
                 "./src/projects/SoftwareLanding/js/downloads.js"
             ],
+
+        "EniseiGardens-Index":
+            [
+                "./src/projects/EniseiGardens/css/general.css",
+                "./src/projects/EniseiGardens/css/index.css",
+                "./src/projects/EniseiGardens/css/responsive/responsive-index.css",
+                "./src/projects/EniseiGardens/css/responsive/responsive-main.css",
+                "./src/projects/EniseiGardens/js/index.js"
+            ],
     },
 
     output:
@@ -53,14 +62,18 @@ module.exports =
         path: path.resolve(__dirname, "dist"),
         filename: ({ chunk }) =>
         {
-            const [project] = chunk.name.split('-');
-            if (project === 'RestaurantLanding')
+            const [project] = chunk.name.split("-");
+            if (project === "RestaurantLanding")
             {
                 return `./projects/RestaurantLanding/js/[name].bundle.js`;
             }
-            else if (project === 'SoftwareLanding')
+            else if (project === "SoftwareLanding")
             {
                 return `./projects/SoftwareLanding/js/[name].bundle.js`;
+            }
+            else if (project === "EniseiGardens")
+            {
+                return `./projects/EniseiGardens/js/[name].bundle.js`;
             }
             return `./js/index.bundle.js`;
         },
@@ -73,7 +86,7 @@ module.exports =
             [
                 {
                     test: /\.tsx?$/,
-                    use: 'ts-loader',
+                    use: "ts-loader",
                     exclude: /node_modules/,
                 },
 
@@ -93,7 +106,7 @@ module.exports =
 
     resolve:
     {
-        extensions: ['.ts', '.js']
+        extensions: [".ts", ".js"]
     },
 
     plugins:
@@ -101,14 +114,18 @@ module.exports =
             new MiniCssExtractPlugin({
                 filename: ({ chunk }) =>
                 {
-                    const [project] = chunk.name.split('-');
-                    if (project === 'RestaurantLanding')
+                    const [project] = chunk.name.split("-");
+                    if (project === "RestaurantLanding")
                     {
                         return `./projects/RestaurantLanding/css/[name].bundle.css`;
                     }
-                    else if (project === 'SoftwareLanding')
+                    else if (project === "SoftwareLanding")
                     {
                         return `./projects/SoftwareLanding/css/[name].bundle.css`;
+                    }
+                    else if (project === "EniseiGardens")
+                    {
+                        return `./projects/EniseiGardens/css/[name].bundle.css`;
                     }
                     return `./css/index.css`;
                 },
@@ -144,11 +161,18 @@ module.exports =
                 chunks: ["SoftwareLanding-Downloads"],
             }),
 
+            new HtmlWebpackPlugin({
+                template: "./src/projects/EniseiGardens/index.html",
+                filename: "projects/EniseiGardens/index.html",
+                chunks: ["EniseiGardens-Index"],
+            }),
+
             new CopyPlugin({
                 patterns: [
                     { from: "./src/assets/", to: "./assets/" },
                     { from: "./src/projects/RestaurantLanding/assets/", to: "./projects/RestaurantLanding/assets/" },
-                    { from: "./src/projects/SoftwareLanding/assets/", to: "./projects/SoftwareLanding/assets/" }
+                    { from: "./src/projects/SoftwareLanding/assets/", to: "./projects/SoftwareLanding/assets/" },
+                    { from: "./src/projects/EniseiGardens/assets/", to: "./projects/EniseiGardens/assets/" }
                 ],
             }),
         ],

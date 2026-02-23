@@ -1,0 +1,19 @@
+header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    background-color: var(--color-bg-1);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px;
+}
+
+h1
+{
+    font-weight: 300;
+    font-size: 2rem;
+}

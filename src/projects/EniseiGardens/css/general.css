@@ -1,0 +1,53 @@
+@import url("./components/button-link.css");
+@import url("./components/header.css");
+@import url("./components/main.css");
+@import url("./components/footer.css");
+
+:root
+{
+    --color-bg-1: white;
+    --color-bg-2: #1D231C;
+    --color-text-1: white;
+    --color-text-2: black;
+    --color-text-3: #273026;
+    --color-accent-1: #4E6D0B;
+    --color-accent-2: #D2FD9C;
+
+    --fs-mobile: 0.875rem;
+    --fs-large: 1rem;
+}
+
+@font-face
+{
+    font-family: "Geist";
+    src: local("Geist"), url("../assets/fonts/Geist-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*
+{
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+
+    line-height: 130%;
+    letter-spacing: -2%;
+}
+
+html
+{
+    font-family: "Geist";
+    font-size: var(--fs-mobile);
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    min-height: 100vh;
+
+    gap: 112px;
+}

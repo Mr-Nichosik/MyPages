@@ -1,4 +1,10 @@
-:root {
+
+@import url("./components/footer-header.css");
+@import url("./components/main-sections.css");
+@import url("./components/terminal.css");
+
+:root
+{
     --color-bg: #0a0f1a;
     --color-text: #66FCF1;
     --color-secondary: #45A29E;
@@ -14,7 +20,8 @@
     --fs-large: 2rem;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Consolas';
     src: local('Consolas'), url('../assets/fonts/Consolas.ttf') format('truetype');
     font-weight: normal;
@@ -22,31 +29,35 @@
     font-display: swap;
 }
 
-::selection {
+::selection
+{
     background-color: var(--color-secondary);
     color: white;
 }
 
-* {
+*
+{
     -webkit-tap-highlight-color: transparent;
     margin: 0px;
 }
 
-html {
-    font-family: 'Consolas';
+html
+{
+    font-family: "Consolas";
     font-size: clamp(var(--fs-base), calc(var(--fs-base) + 0.9vw), var(--fs-large));
     scroll-behavior: smooth;
-
 }
 
-body {
+body
+{
     background-color: var(--color-bg);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-a {
+a
+{
     text-decoration: underline;
     color: inherit;
 }

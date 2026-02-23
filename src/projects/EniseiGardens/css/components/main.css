@@ -1,0 +1,12 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 136px;
+
+    justify-self: stretch;
+    align-self: stretch;
+
+    flex: 1 0 auto;
+}
