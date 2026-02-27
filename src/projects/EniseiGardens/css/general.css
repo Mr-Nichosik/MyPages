@@ -3,6 +3,7 @@
 @import url("./components/header.css");
 @import url("./components/main.css");
 @import url("./components/footer.css");
+@import url("./components/burger.css");
 
 :root
 {
@@ -38,6 +39,12 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+::selection
+{
+    background-color: var(--color-accent-1);
+    color: white;
 }
 
 *

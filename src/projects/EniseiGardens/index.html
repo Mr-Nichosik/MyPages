@@ -12,19 +12,29 @@
 <body>
 
     <header>
-        <div class="header-logo">
-            <h1>Енисейские сады</h1>
-        </div>
-
-        <nav>
-            <div>
-                <button class="burger-button" aria-label="Открыть меню навигации"></button>
+        <div class="header-main-content">
+            <div class="header-logo">
+                <h1>Енисейские сады</h1>
             </div>
 
-            <div class="header-links">
-                <a>Услуги</a>
-                <a>Галерея</a>
-                <a>Заказать смету</a>
+            <nav>
+                <div>
+                    <button id="burger-button" aria-label="Открыть меню навигации"></button>
+                </div>
+
+                <div class="header-links">
+                    <a class="link">Услуги</a>
+                    <a class="link">Галерея</a>
+                    <a class="link">Заказать смету</a>
+                </div>
+            </nav>
+        </div>
+
+        <nav id="burger-menu">
+            <div>
+                <a class="link">Услуги</a>
+                <a class="link">Галерея</a>
+                <a class="link">Заказать смету</a>
             </div>
         </nav>
     </header>
@@ -135,9 +145,9 @@
 
             <div class="footer-head-items">
                 <div class="footer-head-links">
-                    <a>Компания</a>
-                    <a>Услуги</a>
-                    <a>Галерея</a>
+                    <a class="link">Компания</a>
+                    <a class="link">Услуги</a>
+                    <a class="link">Галерея</a>
                 </div>
 
                 <div class="footer-head-contact-info">
@@ -155,10 +165,14 @@
 
         <div class="footer-bottom">
             <div class="footer-bottom-socials">
-                <a href="../../" class="footer-sm-link" id="footer-link-fb"><img src="./assets//img/sm/facebook.png"></a>
-                <a href="../../" class="footer-sm-link" id="footer-link-ig"><img src="./assets//img/sm/instagram.png"></a>
-                <a href="../../" class="footer-sm-link" id="footer-link-tt"><img src="./assets//img/sm/tiktok.png"></a>
-                <a href="../../" class="footer-sm-link" id="footer-link-yt"><img src="./assets//img/sm/youtube.png"></a>
+                <a href="../../" class="footer-sm-link link" id="footer-link-fb"><img
+                        src="./assets//img/sm/facebook.png"></a>
+                <a href="../../" class="footer-sm-link link" id="footer-link-ig"><img
+                        src="./assets//img/sm/instagram.png"></a>
+                <a href="../../" class="footer-sm-link link" id="footer-link-tt"><img
+                        src="./assets//img/sm/tiktok.png"></a>
+                <a href="../../" class="footer-sm-link link" id="footer-link-yt"><img
+                        src="./assets//img/sm/youtube.png"></a>
             </div>
 
             <div class="footer-bottom-copyrights">
