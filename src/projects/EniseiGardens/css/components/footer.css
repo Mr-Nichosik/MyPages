@@ -54,7 +54,8 @@ footer h2
     padding: 40px 0px;
 }
 
-.footer-bottom-socials{
+.footer-bottom-socials
+{
     display: flex;
     gap: 11.98px;
 }

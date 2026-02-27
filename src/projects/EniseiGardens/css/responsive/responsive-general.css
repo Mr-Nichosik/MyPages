@@ -44,3 +44,55 @@
         justify-content: space-between;
     }
 }
+
+@media (min-width: 1280px)
+{
+    html
+    {
+        font-size: var(--fs-pc);
+    }
+
+    .header-links
+    {
+        font-size: var(--fs-pc-large);
+    }
+
+    body main
+    {
+        gap: 0;
+    }
+
+    footer .footer-head
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .footer-head-items
+    {
+        gap: 332px;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html
+    {
+        font-size: var(--fs-pc-large);
+    }
+
+    main #patio-outdoors
+    {
+        margin-top: 344px;
+    }
+
+    header
+    {
+        height: auto;
+    }
+
+    main
+    {
+        padding: 0 clamp(100px, 8vw, 700px);
+    }
+}

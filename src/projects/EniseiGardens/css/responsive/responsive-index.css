@@ -1,3 +1,5 @@
+@import url("./responsive-general.css");
+
 @media (min-width: 800px)
 {
     main #patio-outdoors .article-image
@@ -20,6 +22,7 @@
     main #gardens .article-image
     {
         background-image: url("../assets/img/gardens/gardens-medium.png");
+        height: 409px;
     }
 
     main #gardens .article-info-block
@@ -64,5 +67,82 @@
     {
         width: 218px;
         height: 192px;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    main #patio-outdoors .article-image
+    {
+        background-image: url("../assets/img/patio-outdoors/patio-outdoors-large.png");
+    }
+
+    main .article-gallery-info-block
+    {
+        font-size: var(--fs-pc-large);
+    }
+
+    main #gardens
+    {
+        justify-self: center;
+        align-self: center;
+        width: 640px;
+        padding: 136px 0;
+    }
+
+    main #gardens .article-image
+    {
+        background-image: url("../assets/img/gardens/gardens-large.png");
+        height: 662px;
+    }
+
+    main #gardens .article-info-block
+    {
+        width: 320px;
+        height: 250px;
+    }
+
+    main #water-and-stone
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        padding-bottom: 144px;
+    }
+
+    main #water-and-stone-first-section .article-image
+    {
+        background-image: url("../assets/img/water-and-stone/water-and-stone-large.png");
+        width: 662px;
+    }
+
+    main #conifiers .article-image
+    {
+        background-image: url("../assets/img/conifiers/conifiers-large.png");
+        height: 662px;
+    }
+
+    main #conifiers .article-info-block
+    {
+        width: 320px;
+        height: 250px;
+    }
+
+    main #stone-and-foliage-harmony
+    {
+        padding: 112px 0;
+    }
+
+    main #stone-and-foliage-harmony .article-image
+    {
+        background-image: url("../assets/img/stone-and-foliage-harmony/stone-and-foliage-harmony-large.png");
+        height: 409px;
+        width: 409px;
+    }
+
+    main #stone-and-foliage-harmony .article-info-block
+    {
+        width: 315px;
+        height: 125px;
     }
 }
