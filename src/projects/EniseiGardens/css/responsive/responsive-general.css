@@ -22,10 +22,18 @@
         gap: 8px;
     }
 
-    .burger-button
+    .js-enabled #burger-button
     {
         display: none;
     }
+
+    header #burger-menu.active
+    {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
 
     body main
     {
@@ -102,8 +110,16 @@
         height: auto;
     }
 
+    header .header-main-content
+    {
+        padding: 16px clamp(100px, 10vw, 700px);
+    }
+}
+
+@media (min-width: 2560px)
+{
     main
     {
-        padding: 0 clamp(100px, 7vw, 700px);
+        padding: 0 clamp(100px, 10vw, 700px);
     }
 }

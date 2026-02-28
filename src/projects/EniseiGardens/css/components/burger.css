@@ -1,14 +1,55 @@
 #burger-menu
 {
-    display: none;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    width: 100%;
+
+    flex-direction: column;
+
+    background-color: var(--color-bg-1);
+
+    padding: 16px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    clip-path: inset(0 0 100% 0);
 }
 
 #burger-menu.active
 {
-    display: block;
     visibility: visible;
     opacity: 1;
+
+    clip-path: inset(0 0 0 0);
+}
+
+#burger-menu div
+{
+
+    padding: 12px 0px;
+}
+
+#burger-menu div a
+{
+    display: flex;
+    justify-self: stretch;
+}
+
+.burger-first-link
+{
+    border-top: 1px solid var(--color-text-2);
+    
+}
+
+.burger-second-link
+{
+    border-top: 1px solid var(--color-text-2);
+    border-bottom: 1px solid var(--color-text-2);
+}
+
+.burger-third-link
+{
+    border-bottom: 1px solid var(--color-text-2);
 }
