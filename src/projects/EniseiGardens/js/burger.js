@@ -24,11 +24,13 @@ export class Burger
         if (this.IsOpen == false)
         {
             this.BurgerMenu.classList.add("active");
+            this.BurgerButton.classList.add("active")
             this.IsOpen = true;
         }
         else
         {
             this.BurgerMenu.classList.remove("active");
+            this.BurgerButton.classList.remove("active")
             this.IsOpen = false;
         }
     }

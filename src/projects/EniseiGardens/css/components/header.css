@@ -49,3 +49,8 @@ h1
     background-color: transparent;
     border: none;
 }
+
+.js-enabled #burger-button.active
+{
+    background-image: url("../assets/img/hamburger-menu/hamburger-expand.png");
+}
