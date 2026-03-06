@@ -1,3 +1,8 @@
+main
+{
+    gap: 136px;
+}
+
 .article-info-block
 {
     background-color: var(--color-bg-2);

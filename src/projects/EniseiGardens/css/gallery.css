@@ -1,0 +1,44 @@
+
+@import url("./general.css");
+@import url("./responsive/responsive-gallery.css");
+
+#page-title
+{
+    margin-top: 77px;
+    padding: 76px 16px 20px 16px;
+
+}
+
+#page-title h2
+{
+    font-size: var(--fs-mobile-medium);
+    font-weight: 300;
+}
+
+.main-content-article
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-info-block
+{
+    padding: 10px 10px 20px 10px;
+}
+
+.article-info-block-project-details
+{
+    color: var(--color-accent-1);
+}
+
+.article-info-block-title
+{
+    font-size: var(--fs-mobile-large);
+}
+
+main picture
+{
+    display: block;
+    width: 375px;
+    height: 375px;
+}

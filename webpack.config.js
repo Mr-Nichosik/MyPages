@@ -52,6 +52,12 @@ module.exports =
                 "./src/projects/EniseiGardens/css/index.css",
                 "./src/projects/EniseiGardens/js/index.js"
             ],
+
+        "EniseiGardens-Gallery":
+            [
+                "./src/projects/EniseiGardens/css/gallery.css",
+                "./src/projects/EniseiGardens/js/gallery.js"
+            ],
     },
 
     output:
@@ -162,6 +168,12 @@ module.exports =
                 template: "./src/projects/EniseiGardens/index.html",
                 filename: "projects/EniseiGardens/index.html",
                 chunks: ["EniseiGardens-Index"],
+            }),
+
+            new HtmlWebpackPlugin({
+                template: "./src/projects/EniseiGardens/gallery.html",
+                filename: "projects/EniseiGardens/gallery.html",
+                chunks: ["EniseiGardens-Gallery"],
             }),
 
             new CopyPlugin({
