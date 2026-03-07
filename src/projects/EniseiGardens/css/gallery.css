@@ -1,12 +1,8 @@
 
-@import url("./general.css");
-@import url("./responsive/responsive-gallery.css");
-
 #page-title
 {
     margin-top: 77px;
     padding: 76px 16px 20px 16px;
-
 }
 
 #page-title h2
@@ -42,3 +38,6 @@ main picture
     width: 375px;
     height: 375px;
 }
+
+@import url("./general.css");
+@import url("./responsive/responsive-gallery.css");

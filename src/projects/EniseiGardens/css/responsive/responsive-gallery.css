@@ -1,0 +1,95 @@
+@import url("./responsive-general.css");
+
+@media (min-width: 800px)
+{
+    #title-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #stone-and-foliage-harmony
+    {
+        align-self: center;
+    }
+
+    .content-container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #textures-and-plants-container
+    {
+        flex-direction: row-reverse;
+    }
+
+    #stone-and-foliage-harmony picture
+    {
+        width: 800px;
+        height: 598.56px;
+    }
+
+    #conifier-beauty picture
+    {
+        width: 400px;
+        height: 231px;
+    }
+
+    #hydrangea-accents picture
+    {
+        width: 400px;
+        height: 400px;
+    }
+
+    #ornamental-plants picture
+    {
+        width: 400px;
+        height: 262.02px;
+    }
+
+    #lush-layered-textures picture
+    {
+        width: 400px;
+        height: 403.04px;
+    }
+
+    #gardens picture
+    {
+        width: 400px;
+        height: 403.04px;
+    }
+
+    #elegant-rose-blooms picture
+    {
+        width: 400px;
+        height: 246.02px;
+    }
+
+    #fountains picture
+    {
+        width: 400px;
+        height: 400px;
+    }
+
+    #lawn-detail picture
+    {
+        width: 400px;
+        height: 300px;
+    }
+
+    #gardens-in-bloom picture
+    {
+        width: 539.01px;
+        height: 303.04px;
+    }
+
+    #conifiers-planting picture
+    {
+        width: 260.99px;
+        height: 200.78px;
+    }
+}
+
+@media (min-width: 1280px)
+{}
