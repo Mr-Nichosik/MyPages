@@ -72,6 +72,11 @@
 
 @media (min-width: 1280px)
 {
+    body main
+    {
+        gap: 0;
+    }
+
     main #patio-outdoors .article-image
     {
         background-image: url("../assets/img/patio-outdoors/patio-outdoors-large.png");

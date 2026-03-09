@@ -1,3 +1,15 @@
+.content-container, #first-screen
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-container
+{
+    display: flex;
+    flex-direction: column;
+}
 
 #page-title
 {
@@ -9,6 +21,11 @@
 {
     font-size: var(--fs-mobile-medium);
     font-weight: 300;
+}
+
+#stone-and-foliage-harmony
+{
+    align-self: center;
 }
 
 .main-content-article
@@ -32,7 +49,7 @@
     font-size: var(--fs-mobile-large);
 }
 
-main picture
+picture
 {
     display: block;
     width: 375px;

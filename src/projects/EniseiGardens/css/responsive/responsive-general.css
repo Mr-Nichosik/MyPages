@@ -76,11 +76,6 @@
         font-size: var(--fs-pc-large);
     }
 
-    body main
-    {
-        gap: 0;
-    }
-
     footer .footer-head
     {
         flex-direction: row;

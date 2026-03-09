@@ -2,21 +2,11 @@
 
 @media (min-width: 800px)
 {
-    #title-container
+    main .content-container
     {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #stone-and-foliage-harmony
-    {
-        align-self: center;
-    }
-
-    .content-container
-    {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     #textures-and-plants-container
@@ -92,4 +82,247 @@
 }
 
 @media (min-width: 1280px)
-{}
+{
+    /* main */
+
+    body main
+    {
+        gap: 100px;
+    }
+
+    main #first-screen
+    {
+        margin-top: 168px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    /* title-container */
+
+    main #page-title
+    {
+        display: none;
+    }
+
+    main #title-container .article-sub-block
+    {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+
+    main #first-screen .article-info-block
+    {
+        justify-self: flex-start;
+    }
+
+    #stone-and-foliage-harmony picture
+    {
+        width: 538.68px;
+        height: 403.04px;
+    }
+
+    /* conifiers-and-hydrangea-container */
+
+    #conifiers-and-hydrangea-container
+    {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #conifier-beauty .article-sub-block,
+    #conifier-beauty picture
+    {
+        width: 200.78px;
+    }
+
+    #conifier-beauty picture
+    {
+        height: 200.78px;
+    }
+
+    #conifier-beauty .article-info-block
+    {
+        padding: 10px 0px;
+    }
+
+    #hydrangea-accents .article-sub-block,
+    #hydrangea-accents picture
+    {
+        width: 200.78px;
+    }
+
+    #hydrangea-accents picture
+    {
+        height: 200.78px;
+    }
+
+    #hydrangea-accents .article-info-block
+    {
+        padding: 10px 0px;
+    }
+
+    /* textures-and-plants-container */
+
+    #ornamental-plants
+    {
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    #ornamental-plants .article-sub-block,
+    #ornamental-plants picture
+    {
+        width: 200.78px;
+    }
+
+    #ornamental-plants picture
+    {
+        height: 200.78px;
+    }
+
+    #ornamental-plants .article-info-block
+    {
+        padding: 10px 0px;
+    }
+
+    #lush-layered-textures .article-sub-block
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 640px;
+    }
+
+    #lush-layered-textures picture
+    {
+        width: 450px;
+        height: 403px;
+    }
+
+    /* gardens-and-rose-container */
+
+    #gardens-and-rose-container
+    {
+        align-items: flex-end;
+    }
+
+    #gardens .article-sub-block
+    {
+        display: flex;
+        width: 640px;
+    }
+
+    #gardens picture
+    {
+        width: 450px;
+        height: 403px;
+    }
+
+    #elegant-rose-blooms
+    {
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    #elegant-rose-blooms .article-sub-block,
+    #elegant-rose-blooms picture
+    {
+        width: 200.78px;
+    }
+
+    #elegant-rose-blooms picture
+    {
+        height: 200.78px;
+    }
+
+    #elegant-rose-blooms .article-info-block
+    {
+        padding: 10px 0px;
+    }
+
+    /* fountains-and-lawns-container */
+
+    #fountains-and-lawns-container .article-info-block-title
+    {
+        font-size: var(--fs-pc);
+    }
+
+    #fountains-and-lawns-container .article-info-block-project-details
+    {
+        font-size: var(--fs-mobile);
+    }
+
+    #fountains
+    {
+        width: 50%;
+        align-items: center;
+    }
+
+    #fountains .article-info-block,
+    #fountains picture
+    {
+        width: 212.1px;
+    }
+
+    #fountains picture
+    {
+        height: 212.1px;
+    }
+
+    #lawn-detail .article-info-block
+    {
+        padding-top: 0;
+    }
+
+    #lawn-detail
+    {
+        width: 50%;
+        align-items: center;
+    }
+
+    #lawn-detail .article-sub-block
+    {
+        display: flex;
+    }
+
+    #lawn-detail picture
+    {
+        width: 375px;
+        height: 86px;
+    }
+
+    /* gardens-and-conifiers-container */
+
+    #gardens-in-bloom .article-sub-block
+    {
+        display: flex;
+    }
+
+    #gardens-in-bloom .article-info-block
+    {
+        padding-top: 0;
+    }
+
+    #gardens-in-bloom picture
+    {
+        width: 539.01px;
+        height: 403.04px;
+    }
+
+    #conifiers-planting
+    {
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    #conifiers-planting .article-info-block,
+    #conifiers-planting picture
+    {
+        width: 200.78px;
+    }
+
+    #conifiers-planting picture
+    {
+        height: 200.78px;
+    }
+}
