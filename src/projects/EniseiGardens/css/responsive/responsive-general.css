@@ -12,6 +12,11 @@
         align-items: stretch;
     }
 
+    header #burger-menu
+    {
+        display: none;
+    }
+
     .header-links
     {
         display: flex;
