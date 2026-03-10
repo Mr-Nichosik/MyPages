@@ -10,4 +10,9 @@ class DownloadsPage
     }
 }
 
-const App = new DownloadsPage();
+function main()
+{
+    const App = new DownloadsPage();
+}
+
+main()

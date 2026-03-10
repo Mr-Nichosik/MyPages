@@ -10,4 +10,9 @@ class IndexPage
     }
 }
 
-const App = new IndexPage();
+function main()
+{ 
+    const App = new IndexPage(); 
+}
+
+main()

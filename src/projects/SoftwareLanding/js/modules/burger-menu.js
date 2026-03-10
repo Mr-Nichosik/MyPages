@@ -12,9 +12,12 @@ export class BurgerMenu
         this.BurgerButton = document.getElementById("burger-menu-button");
         this.Menu = document.getElementById("burger-menu-block");
 
-        this.DisplayOverlay = document.getElementById("display-overlay");
+        this.Overlay = document.getElementById("display-overlay");
         this.RightSideBar = document.getElementById("burger-menu-right-sidebar")
         this.Main = document.querySelector("main");
+
+        this.HandleOpening();
+        this.HandleClosing();
     }
 
     HandleOpening()
