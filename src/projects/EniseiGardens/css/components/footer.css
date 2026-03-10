@@ -84,3 +84,8 @@ footer .link
     display: flex;
     gap: 11.98px;
 }
+
+address
+{
+    font-style: normal;
+}
