@@ -32,7 +32,6 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
-        line-height: 110%;
         gap: 8px;
     }
 
@@ -47,7 +46,6 @@
         visibility: hidden;
         opacity: 0;
     }
-
 
     body main
     {
@@ -84,19 +82,9 @@
         --h2: 1.5rem;
     }
 
-    html
-    {
-        font-size: var(--fs-pc);
-    }
-
     header
     {
         height: 158px;
-    }
-
-    .header-links
-    {
-        font-size: var(--fs-pc-large);
     }
 
     footer .footer-head
@@ -115,7 +103,7 @@
 {
     html
     {
-        font-size: var(--fs-pc-large);
+        font-size: 1.2rem;
     }
 
     main #patio-outdoors

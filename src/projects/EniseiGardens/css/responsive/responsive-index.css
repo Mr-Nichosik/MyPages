@@ -2,15 +2,14 @@
 
 @media (min-width: 800px)
 {
+    /* patio-outdoors */
+
     main #patio-outdoors .article-image
     {
         background-image: url("../assets/img/patio-outdoors/patio-outdoors-medium.png");
     }
 
-    main .article-gallery-info-block
-    {
-        font-size: var(--fs-tablet-medium);
-    }
+    /* gardens */
 
     main #gardens
     {
@@ -21,7 +20,7 @@
 
     main #gardens .article-image
     {
-        background-image: url("../assets/img/gardens/gardens-medium.png");
+        background-image: url("../assets/img/gardens-in-bloom/gardens-medium.png");
         height: 409px;
     }
 
@@ -30,6 +29,8 @@
         width: 218px;
         height: 192px;
     }
+
+    /* water-and-stone */
 
     main #water-and-stone
     {
@@ -44,6 +45,8 @@
         width: 400px;
     }
 
+    /* conifiers */
+
     main #conifiers .article-image
     {
         background-image: url("../assets/img/conifiers/conifiers-medium.png");
@@ -55,6 +58,8 @@
         width: 218px;
         height: 192px;
     }
+
+    /* stone-and-foliage-harmony */
 
     main #stone-and-foliage-harmony .article-image
     {
@@ -77,15 +82,14 @@
         gap: 0;
     }
 
+    /* patio-outdoors */
+
     main #patio-outdoors .article-image
     {
         background-image: url("../assets/img/patio-outdoors/patio-outdoors-large.png");
     }
 
-    main .article-gallery-info-block
-    {
-        font-size: var(--fs-pc-large);
-    }
+    /* gardens */
 
     main #gardens
     {
@@ -97,7 +101,7 @@
 
     main #gardens .article-image
     {
-        background-image: url("../assets/img/gardens/gardens-large.png");
+        background-image: url("../assets/img/gardens-in-bloom/gardens-large.png");
         height: 662px;
     }
 
@@ -106,6 +110,8 @@
         width: 320px;
         height: 250px;
     }
+
+    /* water-and-stone */
 
     main #water-and-stone
     {
@@ -121,6 +127,8 @@
         width: 662px;
     }
 
+    /* conifiers */
+
     main #conifiers .article-image
     {
         background-image: url("../assets/img/conifiers/conifiers-large.png");
@@ -132,6 +140,8 @@
         width: 320px;
         height: 250px;
     }
+
+    /* stone-and-foliage-harmony */
 
     main #stone-and-foliage-harmony
     {
@@ -145,9 +155,8 @@
         width: 409px;
     }
 
-    main #stone-and-foliage-harmony .article-info-block
+    main #stone-and-foliage-harmony .article-gallery-info-block
     {
-        width: 315px;
-        height: 125px;
+        width: 45%;
     }
 }
