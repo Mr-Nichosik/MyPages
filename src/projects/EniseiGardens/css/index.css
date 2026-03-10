@@ -15,25 +15,17 @@ main
     box-sizing: border-box;
 }
 
+.article-info-block p
+{
+    font-size: var(--p1);
+    letter-spacing: var(--p1-letter-spacing);
+    line-height: var(--p1-line-height);
+}
+
 .article-image
 {
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.hidden
-{
-    transition: 0.8s;
-    transform: translateY(5%);
-    opacity: 0.7;
-
-    will-change: opacity, transform;
-}
-
-.hidden.show
-{
-    transform: translateY(0%);
-    opacity: 1;
 }
 
 .article-with-gallery-block
@@ -49,8 +41,33 @@ main
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
-    font-size: var(--fs-mobile-medium);
 }
+
+.article-gallery-info-block p
+{
+    margin-left: 1px;
+    font-size: var(--p2);
+    letter-spacing: var(--p2-letter-spacing);
+    line-height: var(--p2-line-height);
+}
+
+a.article-info-block
+{
+    transition: 0.3s;
+    will-change: background-color, transform;
+
+    &:hover
+    {
+        background-color: var(--color-accent-1);
+    }
+
+    &:active
+    {
+        transform: scale(98%);
+    }
+}
+
+/* patio-outdoors */
 
 #patio-outdoors
 {
@@ -62,9 +79,11 @@ main
     padding: 33px 10px 16px 10px;
 }
 
-#patio-outdoors .article-title-block h2
+#patio-outdoors .article-title
 {
-    font-size: 1rem;
+    font-size: var(--p1);
+    letter-spacing: var(--p1-letter-spacing);
+    line-height: var(--p1-line-height);
     font-weight: 300;
 }
 
@@ -82,9 +101,11 @@ main
     align-self: flex-end;
 }
 
+/* gardens */
+
 #gardens .article-image
 {
-    background-image: url("../assets/img/gardens/gardens-small.png");
+    background-image: url("../assets/img/gardens-in-bloom/gardens-small.png");
     height: 375px;
 }
 
@@ -93,6 +114,8 @@ main
     width: 100%;
     height: 100px;
 }
+
+/* water-and-stone */
 
 #water-and-stone
 {
@@ -127,6 +150,8 @@ main
     height: 125px;
 }
 
+/* conifiers */
+
 #conifiers .article-image
 {
     background-image: url("../assets/img/conifiers/conifiers-small.png");
@@ -137,6 +162,8 @@ main
 {
     height: 100px;
 }
+
+/* stone-and-foliage-harmony */
 
 #stone-and-foliage-harmony .article-image
 {

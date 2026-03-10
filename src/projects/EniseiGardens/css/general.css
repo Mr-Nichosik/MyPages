@@ -1,4 +1,3 @@
-
 @import url("./components/button-link.css");
 @import url("./components/header.css");
 @import url("./components/main.css");
@@ -15,7 +14,40 @@
     --color-accent-1: #4E6D0B;
     --color-accent-2: #D2FD9C;
 
-    --fs-mobile: 0.875rem; /* 87,5% * 16px (default browser font size) = 14px */
+    /* font style */
+
+    --p1: 0.875rem;
+    --p2: 1rem;
+    --p3: 0.875rem;
+
+    --h1: 1.5rem;
+    --h2: 1rem;
+    --h3: 1rem;
+
+    --caption: 0.75rem;
+
+    --p1-letter-spacing: -2%;
+    --p2-letter-spacing: -2%;
+    --p3-letter-spacing: -1%;
+
+    --h1-letter-spacing: -2%;
+    --h2-letter-spacing: -2%;
+    --h3-letter-spacing: -3%;
+
+    --caption-letter-spacing: -3%;
+
+    --p1-line-height: 130%;
+    --p2-line-height: 110%;
+    --p3-line-height: 100%;
+
+    --h1-line-height: 109%;
+    --h2-line-height: 110%;
+    --h3-line-height: 100%;
+
+    --caption-line-height: 110%;
+
+    /* 87,5% * 16px (default browser font size) = 14px */
+    --fs-mobile: 0.875rem;
     --fs-tablet: 0.875rem;
     --fs-pc: 1rem;
 
@@ -51,15 +83,12 @@
 {
     -webkit-tap-highlight-color: transparent;
     margin: 0px;
-
-    line-height: 130%;
-    letter-spacing: -2%;
 }
 
 html
 {
     font-family: "Geist";
-    font-size: var(--fs-mobile);
+    font-size: 1rem;
 }
 
 body
@@ -71,4 +100,19 @@ body
     min-height: 100vh;
 
     gap: 112px;
+}
+
+.hidden
+{
+    transition: 0.8s ease-out;
+    transform: translateY(5%);
+    opacity: 0.7;
+
+    will-change: opacity, transform;
+}
+
+.hidden.show
+{
+    transform: translateY(0%);
+    opacity: 1;
 }

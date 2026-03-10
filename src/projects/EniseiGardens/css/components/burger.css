@@ -1,8 +1,7 @@
 #burger-menu
 {
     visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     width: 100%;
 
     flex-direction: column;
@@ -20,7 +19,6 @@
 #burger-menu.active
 {
     visibility: visible;
-    opacity: 1;
 
     clip-path: inset(0 0 0 0);
 }
@@ -40,7 +38,6 @@
 .burger-first-link
 {
     border-top: 1px solid var(--color-text-2);
-    
 }
 
 .burger-second-link

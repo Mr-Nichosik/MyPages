@@ -1,5 +1,14 @@
 @media (min-width: 800px)
 {
+    :root
+    {
+        --p1: 0.875rem;
+        --p2: 1.125rem;
+
+        --h1: 2rem;
+        --h2: 1.125rem;
+    }
+
     header
     {
         height: 140px;
@@ -12,13 +21,17 @@
         align-items: stretch;
     }
 
+    header #burger-menu
+    {
+        display: none;
+    }
+
     .header-links
     {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
-        line-height: 110%;
         gap: 8px;
     }
 
@@ -33,7 +46,6 @@
         visibility: hidden;
         opacity: 0;
     }
-
 
     body main
     {
@@ -61,19 +73,18 @@
 
 @media (min-width: 1280px)
 {
-    html
+    :root
     {
-        font-size: var(--fs-pc);
+        --p1: 1rem;
+        --p2: 1.5rem;
+
+        --h1: 2rem;
+        --h2: 1.5rem;
     }
 
     header
     {
         height: 158px;
-    }
-
-    .header-links
-    {
-        font-size: var(--fs-pc-large);
     }
 
     footer .footer-head
@@ -92,7 +103,7 @@
 {
     html
     {
-        font-size: var(--fs-pc-large);
+        font-size: 1.2rem;
     }
 
     main #patio-outdoors
