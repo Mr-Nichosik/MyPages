@@ -58,6 +58,12 @@ module.exports =
                 "./src/projects/EniseiGardens/css/gallery.css",
                 "./src/projects/EniseiGardens/js/gallery.js"
             ],
+
+        "HouseVOP-Index":
+            [
+                "./src/projects/HouseVOP/css/index.css",
+                "./src/projects/HouseVOP/js/index.js"
+            ],
     },
 
     output:
@@ -77,6 +83,10 @@ module.exports =
             else if (project === "EniseiGardens")
             {
                 return `./projects/EniseiGardens/js/[name].bundle.js`;
+            }
+            else if (project === "HouseVOP")
+            {
+                return `./projects/HouseVOP/js/[name].bundle.js`;
             }
             return `./js/index.bundle.js`;
         },
@@ -130,6 +140,10 @@ module.exports =
                     {
                         return `./projects/EniseiGardens/css/[name].bundle.css`;
                     }
+                    else if (project === "HouseVOP")
+                    {
+                        return `./projects/HouseVOP/css/[name].bundle.css`;
+                    }
                     return `./css/index.css`;
                 },
             }),
@@ -176,12 +190,19 @@ module.exports =
                 chunks: ["EniseiGardens-Gallery"],
             }),
 
+            new HtmlWebpackPlugin({
+                template: "./src/projects/HouseVOP/index.html",
+                filename: "projects/HouseVOP/index.html",
+                chunks: ["HouseVOP"],
+            }),
+
             new CopyPlugin({
                 patterns: [
                     { from: "./src/assets/", to: "./assets/" },
                     { from: "./src/projects/RestaurantLanding/assets/", to: "./projects/RestaurantLanding/assets/" },
                     { from: "./src/projects/SoftwareLanding/assets/", to: "./projects/SoftwareLanding/assets/" },
-                    { from: "./src/projects/EniseiGardens/assets/", to: "./projects/EniseiGardens/assets/" }
+                    { from: "./src/projects/EniseiGardens/assets/", to: "./projects/EniseiGardens/assets/" },
+                    { from: "./src/projects/HouseVOP/assets/", to: "./projects/HouseVOP/assets/" },
                 ],
             }),
         ],
